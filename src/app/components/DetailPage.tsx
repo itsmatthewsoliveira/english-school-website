@@ -112,9 +112,9 @@ export default function DetailPage(props: DetailPageProps) {
                   <WhatsAppGlyph size={18} />
                   {t(primaryCtaLabel.en, primaryCtaLabel.pt)}
                 </a>
-                <Link href="/#courses" className="btn btn-ghost btn-lg">
+                <a href="/#courses" className="btn btn-ghost btn-lg">
                   {t("See all courses", "Ver todos os cursos")}
-                </Link>
+                </a>
               </div>
             </div>
             <div className="detail-hero-visual">
@@ -247,9 +247,9 @@ export default function DetailPage(props: DetailPageProps) {
                   </span>
                 </div>
               </div>
-              <Link href="/#teacher" className="btn btn-outline">
+              <a href="/#teacher" className="btn btn-outline">
                 {t("Meet Teacher Josi", "Conheca a Teacher Josi")}
-              </Link>
+              </a>
             </div>
           </div>
         </div>

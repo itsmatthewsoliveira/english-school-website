@@ -1,21 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useLang } from "../lib/LangContext";
 
-type NavLink = { href: string; labelEn: string; labelPt: string };
+type NavLink = { hash: string; labelEn: string; labelPt: string };
 
+// Hash-anchored nav items (they live on the homepage).
 const LINKS: NavLink[] = [
-  { href: "/#about", labelEn: "About", labelPt: "Sobre" },
-  { href: "/#teacher", labelEn: "Teacher", labelPt: "Professora" },
-  { href: "/#courses", labelEn: "Courses", labelPt: "Cursos" },
-  { href: "/#testimonials", labelEn: "Reviews", labelPt: "Avaliacoes" },
-  { href: "/#faq", labelEn: "FAQ", labelPt: "FAQ" },
+  { hash: "about", labelEn: "About", labelPt: "Sobre" },
+  { hash: "teacher", labelEn: "Teacher", labelPt: "Professora" },
+  { hash: "courses", labelEn: "Courses", labelPt: "Cursos" },
+  { hash: "testimonials", labelEn: "Reviews", labelPt: "Avaliacoes" },
+  { hash: "faq", labelEn: "FAQ", labelPt: "FAQ" },
 ];
 
 export default function Navbar() {
   const { lang, setLang, t } = useLang();
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -26,6 +29,23 @@ export default function Navbar() {
   }, []);
 
   const closeMenu = () => setMobileMenuOpen(false);
+
+  // Smart hash navigation:
+  //   - On homepage: scroll to the section smoothly (Next.js <Link> doesn't
+  //     do this reliably for /#hash when already on /).
+  //   - Off homepage: let the browser handle the <a href="/#hash"> naturally —
+  //     full page load to / auto-scrolls to the hash.
+  const goToHash = (hash: string) => (e: React.MouseEvent) => {
+    closeMenu();
+    if (pathname !== "/") return; // browser handles it
+    e.preventDefault();
+    const el = document.getElementById(hash);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (typeof window !== "undefined") {
+      history.replaceState(null, "", `#${hash}`);
+    }
+  };
 
   return (
     <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
@@ -94,16 +114,16 @@ export default function Navbar() {
                 </Link>
               </li>
               {LINKS.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} onClick={closeMenu}>
+                <li key={l.hash}>
+                  <a href={`/#${l.hash}`} onClick={goToHash(l.hash)}>
                     {t(l.labelEn, l.labelPt)}
-                  </Link>
+                  </a>
                 </li>
               ))}
               <li>
-                <Link href="/#book" className="nav-cta" onClick={closeMenu}>
+                <a href="/#book" className="nav-cta" onClick={goToHash("book")}>
                   {t("Book a class", "Agendar aula")}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

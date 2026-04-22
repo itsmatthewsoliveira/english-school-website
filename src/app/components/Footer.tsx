@@ -1,11 +1,27 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useLang } from "../lib/LangContext";
 import { waLink } from "../lib/whatsapp";
 
 export default function Footer() {
   const { t, lang } = useLang();
+  const pathname = usePathname();
+
+  // Smart hash navigation — same logic as Navbar:
+  // on homepage do a smooth scroll; off-homepage let the browser
+  // handle the <a href="/#hash"> with a full page load.
+  const goToHash = (hash: string) => (e: React.MouseEvent) => {
+    if (pathname !== "/") return;
+    e.preventDefault();
+    const el = document.getElementById(hash);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (typeof window !== "undefined") {
+      history.replaceState(null, "", `#${hash}`);
+    }
+  };
 
   return (
     <footer className="footer">
@@ -27,11 +43,11 @@ export default function Footer() {
           <div className="footer-links-group">
             <p className="footer-heading">{t("Links", "Links")}</p>
             <Link href="/">{t("Home", "Inicio")}</Link>
-            <Link href="/#about">{t("About", "Sobre")}</Link>
-            <Link href="/#teacher">{t("Teacher", "Professora")}</Link>
-            <Link href="/#courses">{t("Courses", "Cursos")}</Link>
-            <Link href="/#testimonials">{t("Reviews", "Avaliacoes")}</Link>
-            <Link href="/#faq">FAQ</Link>
+            <a href="/#about" onClick={goToHash("about")}>{t("About", "Sobre")}</a>
+            <a href="/#teacher" onClick={goToHash("teacher")}>{t("Teacher", "Professora")}</a>
+            <a href="/#courses" onClick={goToHash("courses")}>{t("Courses", "Cursos")}</a>
+            <a href="/#testimonials" onClick={goToHash("testimonials")}>{t("Reviews", "Avaliacoes")}</a>
+            <a href="/#faq" onClick={goToHash("faq")}>FAQ</a>
           </div>
           <div className="footer-links-group">
             <p className="footer-heading">{t("Courses", "Cursos")}</p>
