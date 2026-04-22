@@ -17,7 +17,6 @@ export default function Footer() {
     if (!el) return;
     const top = el.getBoundingClientRect().top + window.scrollY - 72;
     window.scrollTo({ top, behavior: "smooth" });
-    history.replaceState(null, "", `#${hash}`);
   };
 
   return (

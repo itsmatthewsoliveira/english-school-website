@@ -62,15 +62,10 @@ export default function ChatWidget() {
     setMessages(nextHistory);
     setBusy(true);
 
-    // Build payload: strip the seeded greeting (which is fake assistant turn)
-    // and the empty placeholder we just pushed.
-    const apiMessages = nextHistory
-      .filter((_, i) => i !== 0 || messages.length > 1 || false) // drop greeting
-      .slice(0, -1);
-    // Simpler: just send everything except the greeting and the empty trailing assistant turn.
-    const payload = nextHistory
-      .filter((m, i) => !(i === 0 && m === greeting))
-      .slice(0, -1);
+    // API payload rules: first message MUST be user. So skip index 0
+    // (the seeded greeting, a fake assistant turn) and the trailing
+    // empty placeholder we just pushed for streaming.
+    const payload = nextHistory.slice(1, -1);
 
     try {
       const res = await fetch("/api/chat", {

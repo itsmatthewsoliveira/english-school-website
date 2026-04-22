@@ -45,7 +45,8 @@ export default function Navbar() {
     if (!el) return;
     const top = el.getBoundingClientRect().top + window.scrollY - 72; // 72 = navbar height
     window.scrollTo({ top, behavior: "smooth" });
-    history.replaceState(null, "", `#${hash}`);
+    // Don't touch history — Next.js App Router picks up the hash change
+    // and kicks in scroll restoration, which resets us to 0.
   };
 
   return (
