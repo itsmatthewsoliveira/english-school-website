@@ -33,3 +33,4 @@ out/
 # Logs
 logs/
 *.log
+.vercel
