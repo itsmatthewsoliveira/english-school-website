@@ -9,11 +9,17 @@ type NavLink = { hash: string; labelEn: string; labelPt: string };
 
 // Hash-anchored nav items (they live on the homepage).
 const LINKS: NavLink[] = [
-  { hash: "about", labelEn: "About", labelPt: "Sobre" },
-  { hash: "teacher", labelEn: "Teacher", labelPt: "Professora" },
   { hash: "courses", labelEn: "Courses", labelPt: "Cursos" },
   { hash: "testimonials", labelEn: "Reviews", labelPt: "Avaliacoes" },
   { hash: "faq", labelEn: "FAQ", labelPt: "FAQ" },
+];
+
+// Full pages (dedicated routes).
+type PageLink = { href: string; labelEn: string; labelPt: string };
+const PAGES: PageLink[] = [
+  { href: "/about", labelEn: "About", labelPt: "Sobre" },
+  { href: "/schedule", labelEn: "Schedule", labelPt: "Horários" },
+  { href: "/quiz", labelEn: "Level quiz", labelPt: "Teste de nível" },
 ];
 
 export default function Navbar() {
@@ -115,6 +121,13 @@ export default function Navbar() {
                   {t("Home", "Inicio")}
                 </Link>
               </li>
+              {PAGES.map((p) => (
+                <li key={p.href}>
+                  <Link href={p.href} onClick={closeMenu}>
+                    {t(p.labelEn, p.labelPt)}
+                  </Link>
+                </li>
+              ))}
               {LINKS.map((l) => (
                 <li key={l.hash}>
                   <a href={`/#${l.hash}`} onClick={goToHash(l.hash)}>
@@ -123,9 +136,9 @@ export default function Navbar() {
                 </li>
               ))}
               <li>
-                <a href="/#book" className="nav-cta" onClick={goToHash("book")}>
+                <Link href="/book/trial" className="nav-cta" onClick={closeMenu}>
                   {t("Book a class", "Agendar aula")}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import WhatsAppFloat from "./WhatsAppFloat";
+import BookingForm from "./BookingForm";
 import { useLang } from "../lib/LangContext";
 import { waLink, WAIntent } from "../lib/whatsapp";
 
@@ -30,6 +31,8 @@ export type DetailPageProps = {
   sections: DetailSection[];
   whoItsFor: Bilingual[];
   featured?: boolean; // colors the primary CTA differently
+  // If set, renders the on-site BookingForm. Use "trial" | "individual" | "group".
+  bookingFormClass?: "trial" | "individual" | "group";
 };
 
 const CheckSvg = ({ size = 20 }: { size?: number }) => (
@@ -66,6 +69,7 @@ export default function DetailPage(props: DetailPageProps) {
     primaryCtaLabel,
     sections,
     whoItsFor,
+    bookingFormClass,
   } = props;
 
   const whatsappHref = waLink(intent, lang);
@@ -188,6 +192,17 @@ export default function DetailPage(props: DetailPageProps) {
           </div>
         </div>
       </section>
+
+      {/* ====== On-site booking form (optional) ====== */}
+      {bookingFormClass && (
+        <section className="booking-form-section">
+          <div className="container">
+            <div className="booking-form-wrap">
+              <BookingForm classType={bookingFormClass} intent={intent} />
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ====== About the school ====== */}
       <section className="detail-about-school">

@@ -39,8 +39,9 @@ export default function Footer() {
           <div className="footer-links-group">
             <p className="footer-heading">{t("Links", "Links")}</p>
             <Link href="/">{t("Home", "Inicio")}</Link>
-            <a href="/#about" onClick={goToHash("about")}>{t("About", "Sobre")}</a>
-            <a href="/#teacher" onClick={goToHash("teacher")}>{t("Teacher", "Professora")}</a>
+            <Link href="/about">{t("About", "Sobre")}</Link>
+            <Link href="/schedule">{t("Schedule", "Horários")}</Link>
+            <Link href="/quiz">{t("Level quiz", "Teste de nível")}</Link>
             <a href="/#courses" onClick={goToHash("courses")}>{t("Courses", "Cursos")}</a>
             <a href="/#testimonials" onClick={goToHash("testimonials")}>{t("Reviews", "Avaliacoes")}</a>
             <a href="/#faq" onClick={goToHash("faq")}>FAQ</a>

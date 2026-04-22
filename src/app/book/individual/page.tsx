@@ -30,6 +30,7 @@ export default function IndividualBookingPage() {
         },
       }}
       intent="individual"
+      bookingFormClass="individual"
       primaryCtaLabel={{
         en: "Chat on WhatsApp to book",
         pt: "Fale no WhatsApp para agendar",

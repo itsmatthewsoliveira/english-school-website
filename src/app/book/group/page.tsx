@@ -30,6 +30,7 @@ export default function GroupBookingPage() {
         },
       }}
       intent="group"
+      bookingFormClass="group"
       primaryCtaLabel={{
         en: "Chat on WhatsApp about groups",
         pt: "Fale no WhatsApp sobre grupos",

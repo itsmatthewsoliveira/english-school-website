@@ -201,7 +201,9 @@ export default function ChatWidget() {
         <div className="chat-messages" ref={scrollRef}>
           {messages.map((m, i) => (
             <div key={i} className={`chat-bubble chat-bubble-${m.role}`}>
-              {m.content || (
+              {m.content ? (
+                <MessageContent text={m.content} />
+              ) : (
                 <span className="chat-typing">
                   <span /> <span /> <span />
                 </span>
@@ -245,4 +247,107 @@ export default function ChatWidget() {
       </div>
     </>
   );
+}
+
+/**
+ * Renders chat message text with URL and path patterns upgraded to
+ * clickable buttons. Detects:
+ *   - https:// links (e.g. https://wa.me/... or https://example.com)
+ *   - site paths starting with "/" like /book/trial, /courses/mastery, /quiz
+ * External links open in a new tab; internal paths stay in-app.
+ */
+function MessageContent({ text }: { text: string }) {
+  // Regex: external URLs, or internal paths that start with a slash
+  // followed by a known top-level segment. Bounded to avoid matching
+  // punctuation or prose.
+  const pattern = /(https?:\/\/[^\s)]+)|(\/(?:book|courses|quiz|about|schedule)(?:\/[a-z0-9-]+)?\/?)/gi;
+
+  const parts: Array<{ type: "text" | "link"; value: string; href?: string }> = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push({ type: "text", value: text.slice(lastIndex, match.index) });
+    }
+    const raw = match[0];
+    // Strip trailing punctuation that likely isn't part of the URL
+    const trimmed = raw.replace(/[.,!?;:]+$/, "");
+    const punct = raw.slice(trimmed.length);
+    parts.push({ type: "link", value: trimmed, href: trimmed });
+    if (punct) parts.push({ type: "text", value: punct });
+    lastIndex = match.index + raw.length;
+  }
+  if (lastIndex < text.length) {
+    parts.push({ type: "text", value: text.slice(lastIndex) });
+  }
+
+  return (
+    <>
+      {parts.map((p, i) => {
+        if (p.type === "text") return <span key={i}>{p.value}</span>;
+        const isExternal = p.href!.startsWith("http");
+        const label = prettyLabel(p.href!);
+        return (
+          <a
+            key={i}
+            href={p.href!}
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noopener" : undefined}
+            className="chat-link-btn"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden
+            >
+              {isExternal ? (
+                <>
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </>
+              ) : (
+                <>
+                  <path d="M5 12h14" />
+                  <polyline points="12 5 19 12 12 19" />
+                </>
+              )}
+            </svg>
+            <span>{label}</span>
+          </a>
+        );
+      })}
+    </>
+  );
+}
+
+function prettyLabel(href: string): string {
+  // WhatsApp links
+  if (href.includes("wa.me/")) return "WhatsApp Teacher Josi";
+  if (href.includes("instagram.com")) return "Instagram";
+
+  // Internal routes get friendly labels
+  const map: Record<string, string> = {
+    "/quiz": "Take the quiz",
+    "/about": "About the school",
+    "/schedule": "See schedule",
+    "/book/trial": "Book free trial",
+    "/book/individual": "Book 1-on-1",
+    "/book/group": "Join a group class",
+    "/courses/foundation": "Foundation English",
+    "/courses/fluency-builder": "Fluency Builder",
+    "/courses/mastery": "Mastery Program",
+  };
+  const clean = href.replace(/\/$/, "");
+  if (map[clean]) return map[clean];
+
+  // Fallback: strip trailing slash, show as path
+  return clean || href;
 }

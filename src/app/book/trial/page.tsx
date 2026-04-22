@@ -27,6 +27,7 @@ export default function TrialPage() {
         },
       }}
       intent="trial"
+      bookingFormClass="trial"
       primaryCtaLabel={{
         en: "Book free trial on WhatsApp",
         pt: "Agendar aula gratis no WhatsApp",
