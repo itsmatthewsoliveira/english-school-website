@@ -226,10 +226,10 @@ export default function DetailPage(props: DetailPageProps) {
           <div className="detail-about-layout">
             <div className="detail-about-photo">
               <Image
-                src="/images/teacher-josi.png"
+                src="/images/story-student.png"
                 alt={t(
-                  "Portrait of Teacher Josi",
-                  "Retrato da Teacher Josi"
+                  "A student practicing English during a class at The Way",
+                  "Um aluno praticando ingles durante uma aula na The Way"
                 )}
                 width={1024}
                 height={1024}

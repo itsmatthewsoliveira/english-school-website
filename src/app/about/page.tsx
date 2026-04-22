@@ -29,7 +29,7 @@ export default function AboutPage() {
           <div className="detail-hero-layout">
             <div className="detail-hero-content">
               <p className="section-label detail-eyebrow">
-                {t("About us", "Sobre nós")}
+                {t("Our story", "Nossa história")}
               </p>
               <h1>
                 {t(
@@ -39,8 +39,8 @@ export default function AboutPage() {
               </h1>
               <p className="detail-subtitle">
                 {t(
-                  "The Way English School is a high-touch online school founded by Teacher Josi in 2003, now supported by a team of experienced teachers. Over 23+ years we've helped 500+ students across 10+ countries reach the fluency that textbooks and apps couldn't give them.",
-                  "A The Way English School é uma escola online artesanal, fundada pela Teacher Josi em 2003 e hoje apoiada por uma equipe de professores experientes. Em mais de 23 anos, ajudamos mais de 500 alunos em mais de 10 países a alcançarem a fluência que livros e apps não deram."
+                  "The Way English School is a high-touch online school, founded in 2003. Over 23+ years we've built a methodology — and a small team of dedicated teachers — that has helped 500+ students across 10+ countries reach the fluency textbooks and apps couldn't give them.",
+                  "A The Way English School é uma escola online artesanal, fundada em 2003. Em mais de 23 anos construímos uma metodologia — e uma equipe pequena de professores dedicados — que ajudou mais de 500 alunos em mais de 10 países a alcançarem a fluência que livros e apps não deram."
                 )}
               </p>
               <div className="detail-cta-row">
@@ -55,10 +55,10 @@ export default function AboutPage() {
             <div className="detail-hero-visual">
               <div className="detail-hero-image">
                 <Image
-                  src="/images/teacher-josi.png"
+                  src="/images/hero-class.png"
                   alt={t(
-                    "Portrait of Teacher Josi, founder of The Way English School",
-                    "Retrato da Teacher Josi, fundadora da The Way English School"
+                    "A live online English class at The Way",
+                    "Uma aula ao vivo de inglês online na The Way"
                   )}
                   width={1024}
                   height={1024}
@@ -76,25 +76,67 @@ export default function AboutPage() {
           <div className="detail-body-grid">
             <div className="detail-body-main">
               <div className="detail-section">
-                <h2>{t("Our story", "Nossa história")}</h2>
+                <h2>{t("How The Way started", "Como a The Way começou")}</h2>
                 <p style={{ lineHeight: 1.75, marginBottom: 16 }}>
                   {t(
-                    "The Way started in 2003 with a simple idea: most people don't fail at English because they're not smart enough — they fail because the way they were taught didn't match how humans actually learn a language. Textbooks, apps, and generic group classes treat language like a subject to be memorized, not a living conversation.",
-                    "A The Way começou em 2003 com uma ideia simples: a maioria das pessoas não fracassa no inglês por falta de inteligência — fracassa porque o jeito como foi ensinada não combina com o jeito que o cérebro humano aprende uma língua. Livros, apps e aulas genéricas em grupo tratam língua como matéria pra decorar, não como conversa viva."
+                    "It began in 2003 with a simple question: why do so many smart, motivated people give up on English? The answer wasn't talent. It was the method.",
+                    "Tudo começou em 2003 com uma pergunta simples: por que tanta gente inteligente e motivada desiste do inglês? A resposta não era talento. Era o método."
                   )}
                 </p>
                 <p style={{ lineHeight: 1.75, marginBottom: 16 }}>
                   {t(
-                    "Our founder built The Way around the opposite principle: every class is live, every class is a real conversation, and every student's path is personal. No apps, no pre-recorded videos, no AI teachers. Just a room (virtual, but real) where you speak, make mistakes safely, and leave a little more confident every time.",
-                    "Nossa fundadora construiu a The Way no princípio oposto: toda aula é ao vivo, toda aula é conversa real e o caminho de cada aluno é personalizado. Sem apps, sem vídeos gravados, sem professores de IA. Só uma sala (virtual, mas real) onde você fala, erra em segurança e sai um pouco mais confiante a cada vez."
+                    "Textbooks, apps, and generic group classes treat language like a subject to be memorized, not a living conversation. Students grind through grammar, cram vocabulary, and still freeze the moment someone asks a real question. We started The Way to prove there's a better way.",
+                    "Livros, apps e aulas genéricas em grupo tratam língua como matéria pra decorar, não como conversa viva. Alunos decoram gramática, engolem vocabulário e ainda travam quando alguém faz uma pergunta de verdade. A gente fundou a The Way pra mostrar que existe um jeito melhor."
                   )}
                 </p>
                 <p style={{ lineHeight: 1.75 }}>
                   {t(
-                    "23+ years later, The Way has become a quiet success story — students in Brazil, the US, the UK, Canada, Australia, Germany, Japan, Portugal, Argentina, and beyond, all taught by a team of dedicated teachers who know their names, their goals, and where they struggle.",
-                    "Mais de 23 anos depois, a The Way virou uma história de sucesso silenciosa — alunos no Brasil, EUA, Reino Unido, Canadá, Austrália, Alemanha, Japão, Portugal, Argentina e outros países, todos com uma equipe de professores dedicados que conhecem seus nomes, objetivos e dificuldades."
+                    "23+ years later, The Way has grown into a small-team online school — still personal, still live, still one-teacher-per-student at its core. Students in Brazil, the US, the UK, Canada, Australia, Germany, Japan, Portugal, Argentina, and beyond.",
+                    "Mais de 23 anos depois, a The Way virou uma escola online de equipe pequena — ainda pessoal, ainda ao vivo, ainda com um professor por aluno como princípio. Alunos no Brasil, EUA, Reino Unido, Canadá, Austrália, Alemanha, Japão, Portugal, Argentina e outros países."
                   )}
                 </p>
+              </div>
+
+              <div className="detail-section">
+                <h2>{t("Our methodology", "Nossa metodologia")}</h2>
+                <p style={{ lineHeight: 1.75, marginBottom: 16 }}>
+                  {t(
+                    "We believe three things about learning a language:",
+                    "A gente acredita em três coisas sobre aprender uma língua:"
+                  )}
+                </p>
+                <ul className="detail-list">
+                  <li>
+                    <CheckSvg />
+                    <span>
+                      <strong>{t("Speaking comes first.", "A fala vem primeiro.")}</strong>{" "}
+                      {t(
+                        "Grammar rules are scaffolding — useful, but not the building. Every class is mostly conversation, with grammar taught in context as you need it.",
+                        "Regras de gramática são andaime — úteis, mas não são o prédio. Toda aula é principalmente conversa, com gramática ensinada no contexto, conforme você precisa."
+                      )}
+                    </span>
+                  </li>
+                  <li>
+                    <CheckSvg />
+                    <span>
+                      <strong>{t("The teacher matters more than the tool.", "O professor importa mais que a ferramenta.")}</strong>{" "}
+                      {t(
+                        "Apps and AI can drill you forever and you'll never get fluent. A human teacher who knows you, hears your mistakes, and adjusts in real time is the thing that actually works.",
+                        "Apps e IA te treinam pra sempre e você não fica fluente. Um professor humano que te conhece, escuta seus erros e ajusta em tempo real — isso sim funciona."
+                      )}
+                    </span>
+                  </li>
+                  <li>
+                    <CheckSvg />
+                    <span>
+                      <strong>{t("Enjoyment is not optional.", "Gostar não é opcional.")}</strong>{" "}
+                      {t(
+                        "Students who enjoy the journey keep showing up. Students who keep showing up become fluent. So our classes are warm, structured, and paced to the student — never rushed, never boring.",
+                        "Alunos que curtem a jornada continuam aparecendo. Alunos que continuam aparecendo ficam fluentes. Por isso nossas aulas são acolhedoras, estruturadas e no ritmo do aluno — nunca corridas, nunca chatas."
+                      )}
+                    </span>
+                  </li>
+                </ul>
               </div>
 
               <div className="detail-section">
@@ -105,18 +147,18 @@ export default function AboutPage() {
                     <span>
                       <strong>{t("Live, human, 1-on-1 or small group.", "Ao vivo, humana, individual ou em grupo pequeno.")}</strong>{" "}
                       {t(
-                        "No apps replacing the teacher. Every class is on Google Meet or Zoom with one of our teachers.",
-                        "Nenhum app substituindo o professor. Toda aula é no Google Meet ou Zoom com um dos nossos professores."
+                        "Every class is on Google Meet or Zoom with one of our teachers. No apps replacing the teacher.",
+                        "Toda aula é no Google Meet ou Zoom com um dos nossos professores. Nenhum app substituindo o professor."
                       )}
                     </span>
                   </li>
                   <li>
                     <CheckSvg />
                     <span>
-                      <strong>{t("A team you'll actually recognize.", "Uma equipe que você realmente conhece.")}</strong>{" "}
+                      <strong>{t("A small team you'll actually recognize.", "Uma equipe pequena que você realmente conhece.")}</strong>{" "}
                       {t(
-                        "Not a platform with rotating contractors. Each student is matched with a teacher who knows them — and sticks with them.",
-                        "Não é uma plataforma com professores rotativos. Cada aluno é pareado com um professor que o conhece — e fica com ele."
+                        "Not a platform with rotating contractors. Each student is matched with a teacher who sticks with them through the journey.",
+                        "Não é uma plataforma com professores rotativos. Cada aluno é pareado com um professor que fica com ele durante a jornada."
                       )}
                     </span>
                   </li>
@@ -154,23 +196,17 @@ export default function AboutPage() {
               </div>
 
               <div className="detail-section">
-                <h2>{t("About our founder", "Sobre a nossa fundadora")}</h2>
+                <h2>{t("The team", "A equipe")}</h2>
                 <p style={{ lineHeight: 1.75, marginBottom: 16 }}>
                   {t(
-                    "Josimeri Rodrigues Jacinto Gitahy — known to everyone as Teacher Josi — founded The Way in Pocos de Caldas, Minas Gerais, Brazil in 2003. She's taught absolute beginners, corporate executives, PhD candidates, retirees preparing to move abroad, kids learning their first words, and everything in between.",
-                    "Josimeri Rodrigues Jacinto Gitahy — conhecida como Teacher Josi — fundou a The Way em Poços de Caldas, Minas Gerais, Brasil em 2003. Já ensinou iniciantes absolutos, executivos corporativos, candidatos a doutorado, aposentados indo morar fora, crianças aprendendo as primeiras palavras e tudo no meio."
-                  )}
-                </p>
-                <p style={{ lineHeight: 1.75, marginBottom: 16 }}>
-                  {t(
-                    "Her teaching philosophy — now the school's — is simple: when students enjoy the journey, they achieve extraordinary results. Classes are warm, structured, and paced to the student — never rushed, never boring. We believe a teacher's job isn't to be impressive; it's to make the student confident enough to stop needing the teacher.",
-                    "A filosofia dela — hoje a da escola — é simples: quando o aluno curte a jornada, ele alcança resultados extraordinários. As aulas são acolhedoras, estruturadas e no ritmo do aluno — nunca corridas, nunca chatas. A gente acredita que o trabalho do professor não é impressionar, é deixar o aluno confiante o bastante pra não precisar mais dele."
+                    "The Way was founded and is still led by Teacher Josi, based in Pocos de Caldas, Minas Gerais. Over the years she's grown the school into a small team of experienced teachers who share the same philosophy and the same warmth in the classroom.",
+                    "A The Way foi fundada e ainda é liderada pela Teacher Josi, em Poços de Caldas, Minas Gerais. Ao longo dos anos ela expandiu a escola para uma equipe pequena de professores experientes que compartilham a mesma filosofia e o mesmo acolhimento em sala de aula."
                   )}
                 </p>
                 <p style={{ lineHeight: 1.75 }}>
                   {t(
-                    "Today Teacher Josi leads the school alongside a team of experienced teachers — and she's still teaching students personally, too. Outside of teaching, she's a mom, a reader, a traveler, and an endless student herself.",
-                    "Hoje a Teacher Josi lidera a escola ao lado de uma equipe de professores experientes — e continua dando aulas pessoalmente também. Fora da sala de aula, ela é mãe, leitora, viajante e aluna eterna."
+                    "When you book a free trial, you'll be matched with the teacher who best fits your level, goals, and schedule. Sometimes that's the founder; often it's one of our other teachers. Either way, you get someone who knows your name and remembers where you left off.",
+                    "Quando você agenda uma aula experimental, é pareado com o professor que melhor encaixa no seu nível, objetivos e horário. Às vezes é a fundadora; frequentemente é um dos nossos outros professores. De qualquer jeito, você tem alguém que sabe seu nome e lembra onde você parou."
                   )}
                 </p>
               </div>
@@ -217,8 +253,8 @@ export default function AboutPage() {
                 <h3>{t("Ready to start?", "Pronto para começar?")}</h3>
                 <p>
                   {t(
-                    "The best way to know if The Way is right for you is to meet one of our teachers. Free, 30 minutes, zero obligation.",
-                    "O melhor jeito de saber se a The Way é pra você é conhecer um dos nossos professores. Grátis, 30 minutos, sem compromisso."
+                    "The best way to know if The Way is right for you is to try a free class. 30 minutes, zero obligation.",
+                    "O melhor jeito de saber se a The Way é pra você é fazer uma aula grátis. 30 minutos, sem compromisso."
                   )}
                 </p>
                 <Link href="/book/trial" className="btn btn-primary btn-full">

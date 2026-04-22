@@ -190,10 +190,10 @@ export default function Page() {
               <div className="hero-image-card">
                 <div className="hero-img">
                   <Image
-                    src="/images/hero-class.png"
+                    src="/images/hero-student.png"
                     alt={t(
-                      "A live online English class at The Way with students on video call",
-                      "Uma aula ao vivo de ingles online na The Way com alunos por videochamada"
+                      "A student learning English online with The Way, taking notes during a live class",
+                      "Uma aluna aprendendo ingles online com a The Way, fazendo anotacoes durante uma aula ao vivo"
                     )}
                     width={1024}
                     height={1024}
@@ -290,10 +290,10 @@ export default function Page() {
             <div className="teacher-photo">
               <div className="teacher-photo-img">
                 <Image
-                  src="/images/teacher-josi.png"
+                  src="/images/story-student.png"
                   alt={t(
-                    "Portrait of Teacher Josi, founder of The Way English School",
-                    "Retrato da Teacher Josi, fundadora da The Way English School"
+                    "An adult student practicing English out loud during a class at The Way",
+                    "Um aluno adulto praticando ingles em voz alta durante uma aula na The Way"
                   )}
                   width={1024}
                   height={1024}
@@ -302,29 +302,31 @@ export default function Page() {
               </div>
             </div>
             <div className="teacher-info">
-              <p className="section-label">{t("Meet our founder", "Conheca nossa fundadora")}</p>
-              <h2>Teacher Josi</h2>
-              <p className="teacher-role">{t("Founder of The Way English School", "Fundadora da The Way English School")}</p>
+              <p className="section-label">{t("Our story", "Nossa história")}</p>
+              <h2>{t("Built on the belief that everyone can learn English", "Construída na certeza de que qualquer pessoa pode aprender inglês")}</h2>
               <p
                 dangerouslySetInnerHTML={{
                   __html: t(
-                    "With over <strong>23 years of dedicated teaching experience</strong>, Teacher Josi founded The Way to help students around the world unlock their potential through English fluency. Today she leads a team of experienced teachers who continue that mission.",
-                    "Com mais de <strong>23 anos de experiencia dedicada ao ensino</strong>, a Teacher Josi fundou a The Way para ajudar alunos no mundo todo a desbloquear seu potencial atraves da fluencia em ingles. Hoje ela lidera uma equipe de professores experientes que seguem essa missao."
+                    "The Way started in 2003 with a single classroom and a simple idea: <strong>most people don't fail at English because they're not smart enough</strong> — they fail because the way they were taught didn't match how humans actually learn a language.",
+                    "A The Way começou em 2003 com uma sala de aula e uma ideia simples: <strong>a maioria das pessoas não fracassa no inglês por falta de inteligência</strong> — fracassa porque o jeito como foi ensinada não combina com o jeito que o cérebro humano aprende uma língua."
                   ),
                 }}
               />
               <p>
                 {t(
-                  "Based in Pocos de Caldas, Brazil, the school brings warmth, professionalism, and passion to every class. Our philosophy: when students enjoy the journey, they achieve extraordinary results.",
-                  "Sediada em Pocos de Caldas, Brasil, a escola leva calor humano, profissionalismo e paixao a cada aula. Nossa filosofia: quando os alunos aproveitam a jornada, alcancam resultados extraordinarios."
+                  "We built The Way around the opposite principle: every class is live, every class is a real conversation, and every student's path is personal. No apps replacing the teacher. No pre-recorded videos. No AI shortcuts. Just a small team of dedicated teachers — led by our founder Teacher Josi — helping students find their voice in English.",
+                  "Construímos a The Way no princípio oposto: toda aula é ao vivo, toda aula é conversa real e o caminho de cada aluno é personalizado. Sem apps substituindo o professor. Sem vídeos gravados. Sem atalhos de IA. Só uma equipe pequena de professores dedicados — liderada pela fundadora Teacher Josi — ajudando alunos a encontrarem a própria voz em inglês."
                 )}
               </p>
               <ul className="teacher-credentials">
-                <li><CheckSvg /><span>{t("23+ years of teaching experience", "23+ anos de experiencia no ensino")}</span></li>
-                <li><CheckSvg /><span>{t("500+ students taught worldwide", "500+ alunos ensinados no mundo todo")}</span></li>
-                <li><CheckSvg /><span>{t("Beginner through advanced levels", "Do nivel iniciante ao avancado")}</span></li>
-                <li><CheckSvg /><span>{t("Personalized learning approach", "Abordagem de aprendizado personalizada")}</span></li>
+                <li><CheckSvg /><span>{t("Founded in 2003 — 23+ years refining our methodology", "Fundada em 2003 — 23+ anos refinando nossa metodologia")}</span></li>
+                <li><CheckSvg /><span>{t("500+ students taught across 10+ countries", "500+ alunos ensinados em 10+ países")}</span></li>
+                <li><CheckSvg /><span>{t("Every level — beginner through advanced", "Todos os níveis — do iniciante ao avançado")}</span></li>
+                <li><CheckSvg /><span>{t("Personalized plan for every student", "Plano personalizado pra cada aluno")}</span></li>
               </ul>
+              <Link href="/about" className="btn btn-outline" style={{ marginRight: 10 }}>
+                {t("Read our full story", "Leia nossa história completa")}
+              </Link>
               <Link href="/book/trial" className="btn btn-primary">
                 {t("Book a free trial class", "Agende uma aula experimental gratuita")}
               </Link>
