@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 
 type Lang = "en" | "pt";
 
@@ -346,14 +347,18 @@ export default function Page() {
             </div>
             <div className="hero-visual">
               <div className="hero-image-card">
-                <div className="hero-img-placeholder">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <rect x="2" y="3" width="20" height="14" rx="2" />
-                    <line x1="8" y1="21" x2="16" y2="21" />
-                    <line x1="12" y1="17" x2="12" y2="21" />
-                    <circle cx="12" cy="10" r="2" />
-                  </svg>
-                  <span>{t("Live class preview", "Previa da aula ao vivo")}</span>
+                <div className="hero-img">
+                  <Image
+                    src="/images/hero-class.png"
+                    alt={t(
+                      "Teacher Josi in a live online English class with students on video call",
+                      "Teacher Josi em uma aula ao vivo de ingles online com alunos por videochamada"
+                    )}
+                    width={1024}
+                    height={1024}
+                    priority
+                    sizes="(max-width: 992px) 100vw, 520px"
+                  />
                 </div>
                 <div className="hero-floating-badge hero-fb-1">
                   <span className="hfb-icon">
@@ -442,12 +447,17 @@ export default function Page() {
         <div className="container">
           <div className="teacher-content">
             <div className="teacher-photo">
-              <div className="teacher-photo-placeholder">
-                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <span>{t("Photo coming soon", "Foto em breve")}</span>
+              <div className="teacher-photo-img">
+                <Image
+                  src="/images/teacher-josi.png"
+                  alt={t(
+                    "Portrait of Teacher Josi, founder and lead teacher of The Way English School",
+                    "Retrato da Teacher Josi, fundadora e professora principal da The Way English School"
+                  )}
+                  width={1024}
+                  height={1024}
+                  sizes="(max-width: 992px) 280px, 420px"
+                />
               </div>
             </div>
             <div className="teacher-info">

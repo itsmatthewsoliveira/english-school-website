@@ -400,28 +400,22 @@ p { margin-bottom: 0; }
     position: relative;
 }
 
-.hero-img-placeholder {
+.hero-img {
     width: 100%;
     aspect-ratio: 4/3;
-    background: rgba(255,255,255,0.04);
-    backdrop-filter: var(--glass-blur);
-    border: 1px solid rgba(255,255,255,0.08);
     border-radius: var(--radius-xl);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    color: rgba(255,255,255,0.35);
+    overflow: hidden;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 30px 60px -20px rgba(15,23,42,0.35), 0 10px 30px -10px rgba(30,58,138,0.25);
+    position: relative;
 }
 
-.hero-img-placeholder svg {
-    opacity: 0.4;
-}
-
-.hero-img-placeholder span {
-    font-size: 13px;
-    font-weight: 500;
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .hero-floating-badge {
@@ -681,23 +675,22 @@ section {
     align-items: start;
 }
 
-.teacher-photo-placeholder {
+.teacher-photo-img {
     width: 100%;
     aspect-ratio: 3/4;
-    background: linear-gradient(145deg, var(--brand-blue-light), var(--color-bg-subtle));
-    border: 1px solid var(--color-border);
     border-radius: var(--radius-xl);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    color: var(--color-text-tertiary);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    background: linear-gradient(145deg, var(--brand-blue-light), var(--color-bg-subtle));
+    box-shadow: var(--shadow-lg);
+    position: relative;
 }
 
-.teacher-photo-placeholder span {
-    font-size: 13px;
-    font-weight: 500;
+.teacher-photo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .teacher-info .section-label {
