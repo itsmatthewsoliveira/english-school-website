@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { LangProvider } from "./lib/LangContext";
+import ChatWidget from "./components/ChatWidget";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -24,7 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en" data-lang="en">
       <body className={plusJakarta.variable}>
-        <LangProvider>{children}</LangProvider>
+        <LangProvider>
+          {children}
+          <ChatWidget />
+        </LangProvider>
       </body>
     </html>
   );
