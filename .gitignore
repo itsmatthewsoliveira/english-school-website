@@ -34,3 +34,6 @@ out/
 logs/
 *.log
 .vercel
+
+# Local image generation staging (copy to public/images/ before use)
+generated_imgs/
