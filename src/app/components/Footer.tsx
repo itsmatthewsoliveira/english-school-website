@@ -9,18 +9,15 @@ export default function Footer() {
   const { t, lang } = useLang();
   const pathname = usePathname();
 
-  // Smart hash navigation — same logic as Navbar:
-  // on homepage do a smooth scroll; off-homepage let the browser
-  // handle the <a href="/#hash"> with a full page load.
+  // Smart hash navigation — same logic as Navbar.
   const goToHash = (hash: string) => (e: React.MouseEvent) => {
     if (pathname !== "/") return;
     e.preventDefault();
     const el = document.getElementById(hash);
     if (!el) return;
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
-    if (typeof window !== "undefined") {
-      history.replaceState(null, "", `#${hash}`);
-    }
+    const top = el.getBoundingClientRect().top + window.scrollY - 72;
+    window.scrollTo({ top, behavior: "smooth" });
+    history.replaceState(null, "", `#${hash}`);
   };
 
   return (

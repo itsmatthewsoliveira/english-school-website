@@ -31,8 +31,10 @@ export default function Navbar() {
   const closeMenu = () => setMobileMenuOpen(false);
 
   // Smart hash navigation:
-  //   - On homepage: scroll to the section smoothly (Next.js <Link> doesn't
-  //     do this reliably for /#hash when already on /).
+  //   - On homepage: scroll to the section smoothly. We use window.scrollTo
+  //     rather than el.scrollIntoView({behavior:'smooth'}) because the latter
+  //     was silently a no-op in production (likely conflicting with the
+  //     scroll-behavior:smooth CSS rule + body overflow).
   //   - Off homepage: let the browser handle the <a href="/#hash"> naturally —
   //     full page load to / auto-scrolls to the hash.
   const goToHash = (hash: string) => (e: React.MouseEvent) => {
@@ -41,10 +43,9 @@ export default function Navbar() {
     e.preventDefault();
     const el = document.getElementById(hash);
     if (!el) return;
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
-    if (typeof window !== "undefined") {
-      history.replaceState(null, "", `#${hash}`);
-    }
+    const top = el.getBoundingClientRect().top + window.scrollY - 72; // 72 = navbar height
+    window.scrollTo({ top, behavior: "smooth" });
+    history.replaceState(null, "", `#${hash}`);
   };
 
   return (
