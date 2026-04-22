@@ -73,6 +73,10 @@ export default function DetailPage(props: DetailPageProps) {
   } = props;
 
   const whatsappHref = waLink(intent, lang);
+  // Primary CTA now scrolls to the on-site booking form when it's on
+  // this page; otherwise falls back to WhatsApp.
+  const primaryHref = bookingFormClass ? "#book-form" : whatsappHref;
+  const primaryExternal = !bookingFormClass;
 
   return (
     <>
@@ -107,15 +111,21 @@ export default function DetailPage(props: DetailPageProps) {
                 </p>
               )}
               <div className="detail-cta-row">
-                <a
-                  href={whatsappHref}
-                  className="btn btn-primary btn-lg"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <WhatsAppGlyph size={18} />
-                  {t(primaryCtaLabel.en, primaryCtaLabel.pt)}
-                </a>
+                {bookingFormClass ? (
+                  <a href="#book-form" className="btn btn-primary btn-lg">
+                    {t("Book on the website", "Agendar pelo site")}
+                  </a>
+                ) : (
+                  <a
+                    href={whatsappHref}
+                    className="btn btn-primary btn-lg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <WhatsAppGlyph size={18} />
+                    {t(primaryCtaLabel.en, primaryCtaLabel.pt)}
+                  </a>
+                )}
                 <a href="/#courses" className="btn btn-ghost btn-lg">
                   {t("See all courses", "Ver todos os cursos")}
                 </a>
@@ -174,19 +184,25 @@ export default function DetailPage(props: DetailPageProps) {
                 <h3>{t("Ready to start?", "Pronto para comecar?")}</h3>
                 <p>
                   {t(
-                    "Message Teacher Josi directly. She'll reply with available times and answer your questions.",
-                    "Fale direto com a Teacher Josi. Ela responde com horarios e tira suas duvidas."
+                    "Fill out the booking form on this page. One of our teachers will reach out with available times and answer your questions.",
+                    "Preencha o formulario de reserva nesta pagina. Um dos nossos professores entra em contato com os horarios e tira suas duvidas."
                   )}
                 </p>
-                <a
-                  href={whatsappHref}
-                  className="btn btn-primary btn-full"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <WhatsAppGlyph size={18} />
-                  {t(primaryCtaLabel.en, primaryCtaLabel.pt)}
-                </a>
+                {bookingFormClass ? (
+                  <a href="#book-form" className="btn btn-primary btn-full">
+                    {t("Book on the website", "Agendar pelo site")}
+                  </a>
+                ) : (
+                  <a
+                    href={whatsappHref}
+                    className="btn btn-primary btn-full"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <WhatsAppGlyph size={18} />
+                    {t(primaryCtaLabel.en, primaryCtaLabel.pt)}
+                  </a>
+                )}
               </div>
             </aside>
           </div>
@@ -195,7 +211,7 @@ export default function DetailPage(props: DetailPageProps) {
 
       {/* ====== On-site booking form (optional) ====== */}
       {bookingFormClass && (
-        <section className="booking-form-section">
+        <section id="book-form" className="booking-form-section">
           <div className="container">
             <div className="booking-form-wrap">
               <BookingForm classType={bookingFormClass} intent={intent} />
@@ -226,20 +242,20 @@ export default function DetailPage(props: DetailPageProps) {
               </p>
               <h2>
                 {t(
-                  "Taught by Teacher Josi — 23+ years of experience",
-                  "Com a Teacher Josi — mais de 23 anos de experiencia"
+                  "Founded by Teacher Josi. Taught by our team.",
+                  "Fundada pela Teacher Josi. Ensinada pela nossa equipe."
                 )}
               </h2>
               <p>
                 {t(
-                  "The Way is an online English school led by Teacher Josi, based in Pocos de Caldas, Brazil. For over two decades she has helped 500+ students across 10+ countries reach their personal and professional goals through English.",
-                  "The Way e uma escola de ingles online liderada pela Teacher Josi, em Pocos de Caldas, Brasil. Por mais de duas decadas, ela ajudou mais de 500 alunos em mais de 10 paises a conquistarem seus objetivos pessoais e profissionais atraves do ingles."
+                  "The Way is an online English school founded by Teacher Josi in Pocos de Caldas, Brazil. Today a team of experienced teachers works alongside her, and together they've helped 500+ students across 10+ countries reach their personal and professional goals through English.",
+                  "A The Way e uma escola de ingles online fundada pela Teacher Josi em Pocos de Caldas, Brasil. Hoje uma equipe de professores experientes trabalha junto com ela, e juntos ajudaram mais de 500 alunos em mais de 10 paises a conquistarem seus objetivos pessoais e profissionais atraves do ingles."
                 )}
               </p>
               <p>
                 {t(
                   "Every class is 100% live — no apps, no pre-recorded videos, no AI replacements. Just real conversation with a teacher who cares about your progress.",
-                  "Cada aula e 100% ao vivo — sem apps, sem videos gravados, sem substitutos de IA. E conversa real com uma professora que se importa com seu progresso."
+                  "Cada aula e 100% ao vivo — sem apps, sem videos gravados, sem substitutos de IA. E conversa real com um professor que se importa com seu progresso."
                 )}
               </p>
               <div className="detail-about-stats">
@@ -262,8 +278,8 @@ export default function DetailPage(props: DetailPageProps) {
                   </span>
                 </div>
               </div>
-              <a href="/#teacher" className="btn btn-outline">
-                {t("Meet Teacher Josi", "Conheca a Teacher Josi")}
+              <a href="/about" className="btn btn-outline">
+                {t("Learn more about the school", "Saiba mais sobre a escola")}
               </a>
             </div>
           </div>
@@ -282,20 +298,26 @@ export default function DetailPage(props: DetailPageProps) {
             </h2>
             <p>
               {t(
-                "Message Teacher Josi on WhatsApp — no forms, no waiting, no pressure.",
-                "Fale com a Teacher Josi no WhatsApp — sem formularios, sem espera, sem pressao."
+                "Book on the website in under a minute — or message us on WhatsApp if you'd rather chat.",
+                "Agende pelo site em menos de um minuto — ou fale com a gente no WhatsApp, se preferir."
               )}
             </p>
             <div className="cta-buttons">
-              <a
-                href={whatsappHref}
-                className="btn btn-cta-primary"
-                target="_blank"
-                rel="noopener"
-              >
-                <WhatsAppGlyph size={20} />
-                {t(primaryCtaLabel.en, primaryCtaLabel.pt)}
-              </a>
+              {bookingFormClass ? (
+                <a href="#book-form" className="btn btn-cta-primary">
+                  {t("Book on the website", "Agendar pelo site")}
+                </a>
+              ) : (
+                <a
+                  href={whatsappHref}
+                  className="btn btn-cta-primary"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <WhatsAppGlyph size={20} />
+                  {t(primaryCtaLabel.en, primaryCtaLabel.pt)}
+                </a>
+              )}
               <a
                 href="https://instagram.com/teacherjosi.theway"
                 className="btn btn-cta-secondary"

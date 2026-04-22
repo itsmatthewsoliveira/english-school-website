@@ -15,8 +15,8 @@ export default function IndividualBookingPage() {
         pt: "Aulas individuais — feitas sob medida pra voce",
       }}
       subtitle={{
-        en: "Every minute focused on you. Teacher Josi builds the curriculum around your goals, schedule, and pace — no group slowing you down, no cookie-cutter plan.",
-        pt: "Cada minuto focado em voce. A Teacher Josi monta o curriculo ao redor dos seus objetivos, horarios e ritmo — sem grupo te segurando, sem plano pronto.",
+        en: "Every minute focused on you. Your teacher builds the curriculum around your goals, schedule, and pace — no group slowing you down, no cookie-cutter plan.",
+        pt: "Cada minuto focado em voce. Seu professor monta o curriculo ao redor dos seus objetivos, horarios e ritmo — sem grupo te segurando, sem plano pronto.",
       }}
       priceNote={{
         en: "60-minute live classes · Weekly, 2x, or 3x per week — whatever fits",
@@ -25,8 +25,8 @@ export default function IndividualBookingPage() {
       heroImage={{
         src: "/images/hero-class.png",
         alt: {
-          en: "Teacher Josi in a 1-on-1 online English class with a student",
-          pt: "Teacher Josi em uma aula individual de ingles online com um aluno",
+          en: "A 1-on-1 online English class at The Way with a student",
+          pt: "Uma aula individual de ingles online na The Way com um aluno",
         },
       }}
       intent="individual"

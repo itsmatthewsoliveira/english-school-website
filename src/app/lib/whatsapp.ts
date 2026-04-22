@@ -1,6 +1,11 @@
-// WhatsApp link builder for The Way English School
-// Phone: +55 19 98886-9805 (Teacher Josi)
-// All CTAs route here so every booking lead lands in her WhatsApp inbox.
+// WhatsApp link builder for The Way English School.
+// Phone: +55 19 98886-9805 (school contact)
+//
+// CTAs that deep-link to WhatsApp act as a *fallback* channel — the
+// on-site booking form at /book/* is the primary path. These messages
+// are kept generic (not addressed to a specific teacher) because the
+// school has a team of teachers; the right one will respond based on
+// the student's needs and schedule.
 
 export const WA_PHONE = "5519888869805";
 
@@ -17,32 +22,32 @@ export type WAIntent =
 
 const MESSAGES: Record<WAIntent, { en: string; pt: string }> = {
   general: {
-    en: "Hi Teacher Josi! I'm interested in learning English with The Way. Can we chat?",
-    pt: "Oi Teacher Josi! Tenho interesse em aprender ingles com a The Way. Podemos conversar?",
+    en: "Hi! I'm interested in learning English with The Way. Can we chat?",
+    pt: "Oi! Tenho interesse em aprender ingles com a The Way. Podemos conversar?",
   },
   trial: {
-    en: "Hi Teacher Josi! I'd like to book a FREE trial class (30 min) with level assessment. When is your next available time?",
-    pt: "Oi Teacher Josi! Queria agendar uma AULA EXPERIMENTAL gratuita (30 min) com avaliacao de nivel. Qual seu proximo horario disponivel?",
+    en: "Hi! I'd like to book a FREE trial class (30 min) with level assessment. When is the next available time?",
+    pt: "Oi! Queria agendar uma AULA EXPERIMENTAL gratuita (30 min) com avaliacao de nivel. Qual o proximo horario disponivel?",
   },
   individual: {
-    en: "Hi Teacher Josi! I'd like to book an INDIVIDUAL 1-on-1 English class (60 min). Can you send me times and pricing?",
-    pt: "Oi Teacher Josi! Quero agendar uma AULA INDIVIDUAL de ingles (60 min). Pode me mandar horarios e precos?",
+    en: "Hi! I'd like to book an INDIVIDUAL 1-on-1 English class (60 min). Could you send me times and pricing?",
+    pt: "Oi! Quero agendar uma AULA INDIVIDUAL de ingles (60 min). Pode me mandar horarios e precos?",
   },
   group: {
-    en: "Hi Teacher Josi! I'm interested in joining a small GROUP English class (max 5 students, 60 min). What groups do you have open?",
-    pt: "Oi Teacher Josi! Tenho interesse em entrar em uma AULA EM GRUPO (maximo 5 alunos, 60 min). Quais grupos estao abertos?",
+    en: "Hi! I'm interested in joining a small GROUP English class (max 5 students, 60 min). What groups do you have open?",
+    pt: "Oi! Tenho interesse em entrar em uma AULA EM GRUPO (maximo 5 alunos, 60 min). Quais grupos estao abertos?",
   },
   foundation: {
-    en: "Hi Teacher Josi! I'm a beginner and want to learn about the FOUNDATION ENGLISH course. Can we chat?",
-    pt: "Oi Teacher Josi! Sou iniciante e quero saber mais sobre o curso INGLES BASICO (Foundation English). Podemos conversar?",
+    en: "Hi! I'm a beginner and want to learn about the FOUNDATION ENGLISH course. Can we chat?",
+    pt: "Oi! Sou iniciante e quero saber mais sobre o curso INGLES BASICO (Foundation English). Podemos conversar?",
   },
   "fluency-builder": {
-    en: "Hi Teacher Josi! I'm interested in the FLUENCY BUILDER (intermediate) course. How do I get started?",
-    pt: "Oi Teacher Josi! Tenho interesse no curso CONSTRUTOR DE FLUENCIA (intermediario). Como faco para comecar?",
+    en: "Hi! I'm interested in the FLUENCY BUILDER (intermediate) course. How do I get started?",
+    pt: "Oi! Tenho interesse no curso CONSTRUTOR DE FLUENCIA (intermediario). Como faco para comecar?",
   },
   mastery: {
-    en: "Hi Teacher Josi! I'd like to learn more about the MASTERY PROGRAM (advanced English). Can you send details?",
-    pt: "Oi Teacher Josi! Queria saber mais sobre o PROGRAMA DE DOMINIO (ingles avancado). Pode me mandar detalhes?",
+    en: "Hi! I'd like to learn more about the MASTERY PROGRAM (advanced English). Could you send details?",
+    pt: "Oi! Queria saber mais sobre o PROGRAMA DE DOMINIO (ingles avancado). Pode me mandar detalhes?",
   },
 };
 

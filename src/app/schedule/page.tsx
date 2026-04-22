@@ -11,7 +11,7 @@ type Slot = { time: string; available: boolean };
 type Day = { label: { en: string; pt: string }; morning: Slot[]; afternoon: Slot[]; evening: Slot[] };
 
 // Indicative weekly schedule. Availability changes — students confirm
-// actual times with Teacher Josi on WhatsApp.
+// actual times with the school when booking.
 const WEEK: Day[] = [
   { label: { en: "Monday", pt: "Segunda" },
     morning:   [{ time: "07:00", available: true }, { time: "08:00", available: true }, { time: "09:00", available: false }, { time: "10:00", available: true }, { time: "11:00", available: true }],
@@ -70,8 +70,8 @@ export default function SchedulePage() {
             </h1>
             <p className="detail-subtitle">
               {t(
-                "Teacher Josi teaches Monday through Saturday, with morning, afternoon, and evening slots. Here's a typical week. Real availability shifts — pick any time below and we'll confirm on WhatsApp in minutes.",
-                "A Teacher Josi dá aulas de segunda a sábado, com horários de manhã, tarde e noite. Este é um exemplo de semana. A disponibilidade real muda — escolha qualquer horário abaixo e confirmamos no WhatsApp em minutos."
+                "Our teachers teach Monday through Saturday, with morning, afternoon, and evening slots. Here's a typical week. Real availability shifts — pick any time below and we'll confirm within minutes.",
+                "Nossos professores dão aulas de segunda a sábado, com horários de manhã, tarde e noite. Este é um exemplo de semana. A disponibilidade real muda — escolha qualquer horário abaixo e confirmamos em minutos."
               )}
             </p>
             <p
@@ -79,8 +79,8 @@ export default function SchedulePage() {
               style={{ marginTop: 16 }}
             >
               {t(
-                "Times shown in Brazil time (UTC−3). Most students book in their local timezone — Josi adapts.",
-                "Horários em horário de Brasília (UTC−3). A maioria dos alunos agenda no seu fuso — a Josi adapta."
+                "Times shown in Brazil time (UTC−3). Most students book in their local timezone — we adapt.",
+                "Horários em horário de Brasília (UTC−3). A maioria dos alunos agenda no seu fuso — a gente adapta."
               )}
             </p>
           </div>
@@ -141,8 +141,8 @@ export default function SchedulePage() {
               </li>
               <li>
                 {t(
-                  "Teacher Josi confirms or suggests the nearest alternative within a few hours.",
-                  "A Teacher Josi confirma ou sugere a alternativa mais próxima em poucas horas."
+                  "The school confirms or suggests the nearest alternative within a few hours.",
+                  "A escola confirma ou sugere a alternativa mais próxima em poucas horas."
                 )}
               </li>
               <li>
@@ -163,8 +163,8 @@ export default function SchedulePage() {
             </h2>
             <p>
               {t(
-                "Teacher Josi opens new slots often. Message her with the time that would work for you — she'll almost always find a way.",
-                "A Teacher Josi abre horários novos com frequência. Mande o horário que funcionaria pra você — quase sempre ela dá um jeito."
+                "We open new slots often. Message us with the time that would work for you — we'll almost always find a way.",
+                "A gente abre horários novos com frequência. Mande o horário que funcionaria pra você — quase sempre dá um jeito."
               )}
             </p>
             <div className="detail-cta-row" style={{ justifyContent: "center" }}>
@@ -218,8 +218,8 @@ function ScheduleBlock({
         {slots.map((s, i) => {
           const text =
             lang === "pt"
-              ? `Oi Teacher Josi! Queria agendar uma aula gratuita na ${day} às ${s.time}. Esse horário funciona?`
-              : `Hi Teacher Josi! I'd like to book a free trial class on ${day} at ${s.time}. Does that work?`;
+              ? `Oi! Queria agendar uma aula gratuita na ${day} às ${s.time}. Esse horário funciona?`
+              : `Hi! I'd like to book a free trial class on ${day} at ${s.time}. Does that work?`;
           const href = `https://wa.me/5519888869805?text=${encodeURIComponent(text)}`;
           return (
             <a

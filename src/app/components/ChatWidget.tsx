@@ -24,8 +24,8 @@ export default function ChatWidget() {
     role: "assistant",
     content:
       lang === "pt"
-        ? "Oi! Sou a assistente virtual da Teacher Josi. Posso te ajudar com dúvidas sobre cursos, agendamento ou qualquer coisa sobre a escola. O que você quer saber?"
-        : "Hi! I'm Teacher Josi's virtual assistant. I can help with questions about our courses, booking, or anything about the school. What would you like to know?",
+        ? "Oi! Sou a assistente virtual da The Way. Posso te ajudar com dúvidas sobre cursos, agendamento ou qualquer coisa sobre a escola. O que você quer saber?"
+        : "Hi! I'm The Way's virtual assistant. I can help with questions about our courses, booking, or anything about the school. What would you like to know?",
   };
 
   // Seed greeting when the chat opens for the first time
@@ -124,8 +124,8 @@ export default function ChatWidget() {
                   role: "assistant",
                   content:
                     lang === "pt"
-                      ? "Desculpa, tive um problema para responder. Você pode tentar de novo ou falar direto com a Teacher Josi no WhatsApp."
-                      : "Sorry, I ran into a problem. Please try again — or message Teacher Josi directly on WhatsApp.",
+                      ? "Desculpa, tive um problema para responder. Você pode tentar de novo ou falar com a gente no WhatsApp."
+                      : "Sorry, I ran into a problem. Please try again — or message us on WhatsApp.",
                 };
                 return copy;
               });
@@ -142,8 +142,8 @@ export default function ChatWidget() {
           role: "assistant",
           content:
             lang === "pt"
-              ? "Desculpa, não consegui responder agora. Fala com a Teacher Josi direto no WhatsApp: +55 19 98886-9805."
-              : "Sorry, I couldn't respond right now. Message Teacher Josi directly on WhatsApp: +55 19 98886-9805.",
+              ? "Desculpa, não consegui responder agora. Fala com a gente no WhatsApp: +55 19 98886-9805."
+              : "Sorry, I couldn't respond right now. Message us on WhatsApp: +55 19 98886-9805.",
         };
         return copy;
       });
@@ -179,7 +179,7 @@ export default function ChatWidget() {
           <div className="chat-header-left">
             <div className="chat-avatar">J</div>
             <div>
-              <p className="chat-title">{t("Josi's Assistant", "Assistente da Josi")}</p>
+              <p className="chat-title">{t("The Way Assistant", "Assistente da The Way")}</p>
               <p className="chat-status">
                 <span className="chat-dot" />
                 {t("Online · AI assistant", "Online · Assistente IA")}
@@ -240,8 +240,8 @@ export default function ChatWidget() {
         </div>
         <p className="chat-disclaimer">
           {t(
-            "AI assistant. For bookings, Teacher Josi replies personally on WhatsApp.",
-            "Assistente de IA. Para agendar, a Teacher Josi responde pessoalmente no WhatsApp."
+            "AI assistant. For bookings, one of our teachers will reach out once you fill the form.",
+            "Assistente de IA. Para agendar, um dos nossos professores entra em contato após o formulário."
           )}
         </p>
       </div>
@@ -330,7 +330,7 @@ function MessageContent({ text }: { text: string }) {
 
 function prettyLabel(href: string): string {
   // WhatsApp links
-  if (href.includes("wa.me/")) return "WhatsApp Teacher Josi";
+  if (href.includes("wa.me/")) return "WhatsApp us";
   if (href.includes("instagram.com")) return "Instagram";
 
   // Internal routes get friendly labels

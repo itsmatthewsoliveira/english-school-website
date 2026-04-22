@@ -205,8 +205,8 @@ function recommendation(level: Level): {
       whyPt:
         "Você está no começo do caminho. O Foundation English constrói gramática, vocabulário e conversas do dia a dia com confiança, do zero.",
       next: {
-        en: "Book a free trial to confirm your level with Teacher Josi.",
-        pt: "Agende uma aula gratuita para confirmar seu nível com a Teacher Josi.",
+        en: "Book a free trial to confirm your level with one of our teachers.",
+        pt: "Agende uma aula gratuita para confirmar seu nível com um dos nossos professores.",
       },
       intent: "foundation",
     };
@@ -233,12 +233,12 @@ function recommendation(level: Level): {
       coursePath: "/courses/fluency-builder",
       courseShort: { en: "Upper-intermediate", pt: "Intermediário-avançado" },
       whyEn:
-        "You're upper-intermediate. Depending on your goals (work, travel, exams), Teacher Josi will place you in advanced Fluency Builder or start you on the Mastery Program.",
+        "You're upper-intermediate. Depending on your goals (work, travel, exams), one of our teachers will place you in advanced Fluency Builder or start you on the Mastery Program.",
       whyPt:
-        "Você está intermediário-avançado. Dependendo dos seus objetivos (trabalho, viagem, provas), a Teacher Josi te coloca no Fluency Builder avançado ou no Mastery Program.",
+        "Você está intermediário-avançado. Dependendo dos seus objetivos (trabalho, viagem, provas), um dos nossos professores te coloca no Fluency Builder avançado ou no Mastery Program.",
       next: {
-        en: "Book a free trial so Teacher Josi can recommend the exact fit.",
-        pt: "Agende uma aula gratuita para a Teacher Josi recomendar o curso ideal.",
+        en: "Book a free trial so your teacher can recommend the exact fit.",
+        pt: "Agende uma aula gratuita para seu professor recomendar o curso ideal.",
       },
       intent: "trial",
     };
@@ -253,8 +253,8 @@ function recommendation(level: Level): {
     whyPt:
       "Seu nível é avançado. O Mastery Program refina precisão, nuance, comunicação profissional e fluência de nível nativo.",
     next: {
-      en: "Book a free trial to map your next milestones with Teacher Josi.",
-      pt: "Agende uma aula gratuita para mapear seus próximos marcos com a Teacher Josi.",
+      en: "Book a free trial to map your next milestones with one of our teachers.",
+      pt: "Agende uma aula gratuita para mapear seus próximos marcos com um dos nossos professores.",
     },
     intent: "mastery",
   };

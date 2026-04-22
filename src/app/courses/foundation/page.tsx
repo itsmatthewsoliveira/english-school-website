@@ -12,8 +12,8 @@ export default function FoundationPage() {
         pt: "Ingles Basico — comece do zero com confianca",
       }}
       subtitle={{
-        en: "Build the vocabulary, grammar, and pronunciation you need to have your first real conversations in English. Live, 1-on-1 or small group, with Teacher Josi.",
-        pt: "Construa o vocabulario, a gramatica e a pronuncia necessarios para ter suas primeiras conversas reais em ingles. Ao vivo, individual ou em grupo pequeno, com a Teacher Josi.",
+        en: "Build the vocabulary, grammar, and pronunciation you need to have your first real conversations in English. Live, 1-on-1 or small group, with one of our experienced teachers.",
+        pt: "Construa o vocabulario, a gramatica e a pronuncia necessarios para ter suas primeiras conversas reais em ingles. Ao vivo, individual ou em grupo pequeno, com um dos nossos professores experientes.",
       }}
       priceNote={{
         en: "Live classes · 60 min · Weekly or 2–3x per week",
@@ -22,8 +22,8 @@ export default function FoundationPage() {
       heroImage={{
         src: "/images/hero-class.png",
         alt: {
-          en: "Teacher Josi teaching a live online beginner English class",
-          pt: "Teacher Josi dando uma aula ao vivo de ingles para iniciantes",
+          en: "A live online beginner English class at The Way",
+          pt: "Uma aula ao vivo de ingles para iniciantes na The Way",
         },
       }}
       intent="foundation"

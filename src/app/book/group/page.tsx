@@ -25,8 +25,8 @@ export default function GroupBookingPage() {
       heroImage={{
         src: "/images/hero-class.png",
         alt: {
-          en: "Teacher Josi leading a small online English group class",
-          pt: "Teacher Josi dando uma aula em grupo pequeno de ingles online",
+          en: "A small online English group class at The Way",
+          pt: "Uma aula em grupo pequeno de ingles online na The Way",
         },
       }}
       intent="group"
@@ -83,8 +83,8 @@ export default function GroupBookingPage() {
               pt: "Horario fixo semanal — cria consistencia e rotina",
             },
             {
-              en: "New groups open regularly — message Josi to find one that fits you",
-              pt: "Grupos novos abrem com frequencia — fale com a Josi para achar o seu",
+              en: "New groups open regularly — book a trial to find one that fits you",
+              pt: "Grupos novos abrem com frequencia — agende uma aula experimental para achar o seu",
             },
           ],
         },

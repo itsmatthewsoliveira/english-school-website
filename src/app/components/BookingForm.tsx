@@ -66,14 +66,14 @@ export default function BookingForm({
         </div>
         <h3>
           {t(
-            "You're in. Teacher Josi will reply soon.",
-            "Deu certo! A Teacher Josi responde em breve."
+            "You're in. We'll reply soon.",
+            "Deu certo! A gente responde em breve."
           )}
         </h3>
         <p>
           {t(
-            "We've got your details. Expect a reply within a few hours. If you're in a rush, you can also message her directly on WhatsApp.",
-            "Recebemos suas informações. A resposta vem em poucas horas. Se tiver pressa, você pode falar direto com ela no WhatsApp."
+            "We've got your details. One of our teachers will reach out within a few hours. If you're in a rush, you can also message us on WhatsApp.",
+            "Recebemos suas informações. Um dos nossos professores entra em contato em poucas horas. Se tiver pressa, você pode falar com a gente no WhatsApp."
           )}
         </p>
         <a
@@ -82,7 +82,7 @@ export default function BookingForm({
           target="_blank"
           rel="noopener"
         >
-          {t("Message Teacher Josi on WhatsApp", "Falar com a Teacher Josi no WhatsApp")}
+          {t("Message us on WhatsApp", "Falar no WhatsApp")}
         </a>
       </div>
     );
@@ -93,8 +93,8 @@ export default function BookingForm({
       <h3>{t("Book on the website", "Agende pelo site")}</h3>
       <p className="booking-form-sub">
         {t(
-          "Fill this out and Teacher Josi will reach out to confirm your time.",
-          "Preenche aqui e a Teacher Josi entra em contato pra confirmar seu horário."
+          "Fill this out and one of our teachers will reach out to confirm your time.",
+          "Preenche aqui e um dos nossos professores entra em contato pra confirmar seu horário."
         )}
       </p>
 
@@ -172,8 +172,8 @@ export default function BookingForm({
       {status === "error" && (
         <p className="booking-form-error">
           {t(
-            "Couldn't send. Please try again or message Teacher Josi on WhatsApp.",
-            "Não foi possível enviar. Tente de novo ou fale com a Teacher Josi no WhatsApp."
+            "Couldn't send. Please try again or message us on WhatsApp.",
+            "Não foi possível enviar. Tente de novo ou fale com a gente no WhatsApp."
           )}
           {error ? ` (${error})` : null}
         </p>

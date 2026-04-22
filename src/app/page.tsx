@@ -83,8 +83,8 @@ export default function Page() {
     {
       q: ["How do the online classes work?", "Como funcionam as aulas online?"],
       a: [
-        "Classes are held live via video call (Google Meet or Zoom). You'll have real-time interaction with Teacher Josi, just like being in a physical classroom - but from the comfort of your home. All you need is a computer or tablet with internet access.",
-        "As aulas sao realizadas ao vivo por videochamada (Google Meet ou Zoom). Voce tera interacao em tempo real com a Teacher Josi, como em uma sala de aula presencial - mas no conforto da sua casa. Tudo que voce precisa e um computador ou tablet com acesso a internet.",
+        "Classes are held live via video call (Google Meet or Zoom). You'll have real-time interaction with your teacher, just like being in a physical classroom - but from the comfort of your home. All you need is a computer or tablet with internet access.",
+        "As aulas sao realizadas ao vivo por videochamada (Google Meet ou Zoom). Voce tera interacao em tempo real com seu professor, como em uma sala de aula presencial - mas no conforto da sua casa. Tudo que voce precisa e um computador ou tablet com acesso a internet.",
       ],
     },
     {
@@ -104,8 +104,8 @@ export default function Page() {
     {
       q: ["I'm a complete beginner. Is that okay?", "Sou iniciante completo. Tudo bem?"],
       a: [
-        "Absolutely! Many of our most successful students started with zero English knowledge. Teacher Josi is experienced in working with complete beginners and will guide you step by step. The free trial class includes a level assessment so we know exactly where to start.",
-        "Com certeza! Muitos dos nossos alunos mais bem-sucedidos comecaram sem nenhum conhecimento de ingles. A Teacher Josi tem experiencia em trabalhar com iniciantes completos e vai guia-lo passo a passo. A aula experimental gratuita inclui uma avaliacao de nivel para sabermos exatamente por onde comecar.",
+        "Absolutely! Many of our most successful students started with zero English knowledge. Our teachers are experienced in working with complete beginners and will guide you step by step. The free trial class includes a level assessment so we know exactly where to start.",
+        "Com certeza! Muitos dos nossos alunos mais bem-sucedidos comecaram sem nenhum conhecimento de ingles. Nossos professores tem experiencia em trabalhar com iniciantes completos e vao guia-lo passo a passo. A aula experimental gratuita inclui uma avaliacao de nivel para sabermos exatamente por onde comecar.",
       ],
     },
     {
@@ -118,8 +118,8 @@ export default function Page() {
     {
       q: ["What materials do I need?", "Quais materiais eu preciso?"],
       a: [
-        "All learning materials are provided digitally by Teacher Josi. You just need a computer, tablet, or smartphone with a stable internet connection, a webcam, and a microphone. No expensive textbooks required!",
-        "Todos os materiais de aprendizagem sao fornecidos digitalmente pela Teacher Josi. Voce so precisa de um computador, tablet ou smartphone com conexao estavel a internet, webcam e microfone. Sem necessidade de livros caros!",
+        "All learning materials are provided digitally by your teacher. You just need a computer, tablet, or smartphone with a stable internet connection, a webcam, and a microphone. No expensive textbooks required!",
+        "Todos os materiais de aprendizagem sao fornecidos digitalmente pelo seu professor. Voce so precisa de um computador, tablet ou smartphone com conexao estavel a internet, webcam e microfone. Sem necessidade de livros caros!",
       ],
     },
   ];
@@ -157,9 +157,9 @@ export default function Page() {
                 )}
               </p>
               <div className="hero-cta">
-                <a href={waLink("trial", lang)} className="btn btn-primary" target="_blank" rel="noopener">
+                <Link href="/book/trial" className="btn btn-primary">
                   {t("Book a free trial", "Agende uma aula gratis")}
-                </a>
+                </Link>
                 <a href="#courses" className="btn btn-ghost">
                   {t("View courses", "Ver cursos")}
                 </a>
@@ -192,8 +192,8 @@ export default function Page() {
                   <Image
                     src="/images/hero-class.png"
                     alt={t(
-                      "Teacher Josi in a live online English class with students on video call",
-                      "Teacher Josi em uma aula ao vivo de ingles online com alunos por videochamada"
+                      "A live online English class at The Way with students on video call",
+                      "Uma aula ao vivo de ingles online na The Way com alunos por videochamada"
                     )}
                     width={1024}
                     height={1024}
@@ -233,8 +233,8 @@ export default function Page() {
           <div className="about-content">
             <p className="about-lead">
               {t(
-                "We are an online English school with live classes taught by an experienced, dedicated teacher. With 23 years of teaching, we've helped hundreds of students achieve their personal and professional dreams.",
-                "Somos uma escola de ingles online com aulas ao vivo ministradas por uma professora experiente e dedicada. Com 23 anos de ensino, ajudamos centenas de alunos a realizarem seus sonhos pessoais e profissionais."
+                "We are an online English school with live classes taught by a team of experienced, dedicated teachers. Founded in 2003 and still growing, we've helped hundreds of students achieve their personal and professional dreams.",
+                "Somos uma escola de ingles online com aulas ao vivo ministradas por uma equipe de professores experientes e dedicados. Fundada em 2003 e ainda crescendo, ajudamos centenas de alunos a realizarem seus sonhos pessoais e profissionais."
               )}
             </p>
             <p
@@ -255,7 +255,7 @@ export default function Page() {
                 </svg>
               </div>
               <h3>{t("Expert instruction", "Ensino especializado")}</h3>
-              <p>{t("Learn from Teacher Josi with 23 years of dedicated teaching experience", "Aprenda com a Teacher Josi com 23 anos de experiencia dedicada ao ensino")}</p>
+              <p>{t("A team of experienced teachers, led by founder Teacher Josi with 23+ years of dedicated teaching experience", "Uma equipe de professores experientes, liderada pela fundadora Teacher Josi, com mais de 23 anos dedicados ao ensino")}</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">
@@ -292,8 +292,8 @@ export default function Page() {
                 <Image
                   src="/images/teacher-josi.png"
                   alt={t(
-                    "Portrait of Teacher Josi, founder and lead teacher of The Way English School",
-                    "Retrato da Teacher Josi, fundadora e professora principal da The Way English School"
+                    "Portrait of Teacher Josi, founder of The Way English School",
+                    "Retrato da Teacher Josi, fundadora da The Way English School"
                   )}
                   width={1024}
                   height={1024}
@@ -302,32 +302,32 @@ export default function Page() {
               </div>
             </div>
             <div className="teacher-info">
-              <p className="section-label">{t("Meet your teacher", "Conheca sua professora")}</p>
+              <p className="section-label">{t("Meet our founder", "Conheca nossa fundadora")}</p>
               <h2>Teacher Josi</h2>
-              <p className="teacher-role">{t("Founder & Lead Teacher", "Fundadora e Professora Principal")}</p>
+              <p className="teacher-role">{t("Founder of The Way English School", "Fundadora da The Way English School")}</p>
               <p
                 dangerouslySetInnerHTML={{
                   __html: t(
-                    "With over <strong>23 years of dedicated teaching experience</strong>, Teacher Josi has helped hundreds of students across the globe unlock their potential through English fluency.",
-                    "Com mais de <strong>23 anos de experiencia dedicada ao ensino</strong>, a Teacher Josi ajudou centenas de alunos em todo o mundo a desbloquear seu potencial atraves da fluencia em ingles."
+                    "With over <strong>23 years of dedicated teaching experience</strong>, Teacher Josi founded The Way to help students around the world unlock their potential through English fluency. Today she leads a team of experienced teachers who continue that mission.",
+                    "Com mais de <strong>23 anos de experiencia dedicada ao ensino</strong>, a Teacher Josi fundou a The Way para ajudar alunos no mundo todo a desbloquear seu potencial atraves da fluencia em ingles. Hoje ela lidera uma equipe de professores experientes que seguem essa missao."
                   ),
                 }}
               />
               <p>
                 {t(
-                  "Based in Pocos de Caldas, Brazil, she brings warmth, professionalism, and passion to every class. Her philosophy: when students enjoy the journey, they achieve extraordinary results.",
-                  "Sediada em Pocos de Caldas, Brasil, ela traz calor humano, profissionalismo e paixao para cada aula. Sua filosofia: quando os alunos aproveitam a jornada, alcancam resultados extraordinarios."
+                  "Based in Pocos de Caldas, Brazil, the school brings warmth, professionalism, and passion to every class. Our philosophy: when students enjoy the journey, they achieve extraordinary results.",
+                  "Sediada em Pocos de Caldas, Brasil, a escola leva calor humano, profissionalismo e paixao a cada aula. Nossa filosofia: quando os alunos aproveitam a jornada, alcancam resultados extraordinarios."
                 )}
               </p>
               <ul className="teacher-credentials">
-                <li><CheckSvg /><span>{t("23+ years of English teaching", "23+ anos ensinando ingles")}</span></li>
+                <li><CheckSvg /><span>{t("23+ years of teaching experience", "23+ anos de experiencia no ensino")}</span></li>
                 <li><CheckSvg /><span>{t("500+ students taught worldwide", "500+ alunos ensinados no mundo todo")}</span></li>
                 <li><CheckSvg /><span>{t("Beginner through advanced levels", "Do nivel iniciante ao avancado")}</span></li>
                 <li><CheckSvg /><span>{t("Personalized learning approach", "Abordagem de aprendizado personalizada")}</span></li>
               </ul>
-              <a href={waLink("trial", lang)} className="btn btn-primary" target="_blank" rel="noopener">
-                {t("Book a class with Teacher Josi", "Agende uma aula com a Teacher Josi")}
-              </a>
+              <Link href="/book/trial" className="btn btn-primary">
+                {t("Book a free trial class", "Agende uma aula experimental gratuita")}
+              </Link>
             </div>
           </div>
         </div>
@@ -456,8 +456,8 @@ export default function Page() {
             <h2>{t("Pick the class that fits you", "Escolha a aula ideal para voce")}</h2>
             <p className="section-desc">
               {t(
-                "Message Teacher Josi directly on WhatsApp — she'll reply with available times and get you started.",
-                "Fale direto com a Teacher Josi no WhatsApp — ela responde com horarios e te ajuda a comecar."
+                "Pick the class type that fits you, fill a quick form, and one of our teachers will reach out with available times.",
+                "Escolha o tipo de aula que combina com voce, preencha um formulario rapido e um dos nossos professores entra em contato com os horarios disponiveis."
               )}
             </p>
           </div>
@@ -473,8 +473,8 @@ export default function Page() {
               <h3>{t("Trial class", "Aula experimental")}</h3>
               <p className="booking-desc">
                 {t(
-                  "Meet Teacher Josi, get a level assessment, and receive a custom study plan.",
-                  "Conheca a Teacher Josi, receba uma avaliacao de nivel e um plano de estudos personalizado."
+                  "Meet your teacher, get a level assessment, and receive a custom study plan.",
+                  "Conheca seu professor, receba uma avaliacao de nivel e um plano de estudos personalizado."
                 )}
               </p>
               <ul className="booking-features">
@@ -574,8 +574,8 @@ export default function Page() {
               },
               {
                 text: [
-                  '"Teacher Josi makes learning English enjoyable and accessible. The live classes are engaging and I always look forward to them."',
-                  '"A Teacher Josi torna o aprendizado de ingles agradavel e acessivel. As aulas ao vivo sao envolventes e eu sempre espero ansiosamente por elas."',
+                  '"The teachers at The Way make learning English enjoyable and accessible. The live classes are engaging and I always look forward to them."',
+                  '"Os professores da The Way tornam o aprendizado de ingles agradavel e acessivel. As aulas ao vivo sao envolventes e eu sempre espero ansiosamente por elas."',
                 ],
                 name: "Carlos R.",
                 role: ["University Student", "Estudante Universitario"],

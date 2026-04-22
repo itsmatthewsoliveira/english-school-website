@@ -8,12 +8,12 @@ export default function TrialPage() {
       eyebrow={{ en: "Free trial class", pt: "Aula experimental gratuita" }}
       tag={{ en: "Free · 30 min · No obligation", pt: "Gratis · 30 min · Sem compromisso" }}
       title={{
-        en: "Book your free 30-minute trial class with Teacher Josi",
-        pt: "Agende sua aula experimental gratuita de 30 min com a Teacher Josi",
+        en: "Book your free 30-minute trial class",
+        pt: "Agende sua aula experimental gratuita de 30 min",
       }}
       subtitle={{
-        en: "Meet Teacher Josi, get an honest assessment of your current English level, and leave with a clear, personalized study plan — all in 30 minutes. Zero cost, zero pressure.",
-        pt: "Conheca a Teacher Josi, receba uma avaliacao honesta do seu nivel atual de ingles e saia com um plano de estudos personalizado — tudo em 30 min. Zero custo, zero pressao.",
+        en: "Meet your teacher, get an honest assessment of your current English level, and leave with a clear, personalized study plan — all in 30 minutes. Zero cost, zero pressure.",
+        pt: "Conheca seu professor, receba uma avaliacao honesta do seu nivel atual de ingles e saia com um plano de estudos personalizado — tudo em 30 min. Zero custo, zero pressao.",
       }}
       priceNote={{
         en: "30 minutes · 100% online · In English or Portuguese — whichever is more comfortable",
@@ -22,8 +22,8 @@ export default function TrialPage() {
       heroImage={{
         src: "/images/hero-class.png",
         alt: {
-          en: "Teacher Josi welcoming a new student to their first free trial class",
-          pt: "Teacher Josi recebendo um novo aluno na primeira aula experimental gratuita",
+          en: "A teacher at The Way welcoming a new student to their first free trial class",
+          pt: "Um professor da The Way recebendo um novo aluno na primeira aula experimental gratuita",
         },
       }}
       intent="trial"
@@ -37,8 +37,8 @@ export default function TrialPage() {
           heading: { en: "What happens in the trial", pt: "O que acontece na experimental" },
           bullets: [
             {
-              en: "Quick, friendly chat so Teacher Josi understands your goals and background",
-              pt: "Uma conversa rapida e amigavel para a Teacher Josi entender seus objetivos e historia",
+              en: "Quick, friendly chat so your teacher understands your goals and background",
+              pt: "Uma conversa rapida e amigavel para seu professor entender seus objetivos e historia",
             },
             {
               en: "Informal level assessment — speaking, listening, grammar, vocabulary",
@@ -62,12 +62,12 @@ export default function TrialPage() {
           heading: { en: "How to book", pt: "Como agendar" },
           bullets: [
             {
-              en: "Click the WhatsApp button — a ready-to-send message is pre-filled",
-              pt: "Clique no botao do WhatsApp — ja vem com uma mensagem pronta",
+              en: "Fill out the booking form on this page — takes about 60 seconds",
+              pt: "Preencha o formulario de reserva nesta pagina — leva cerca de 60 segundos",
             },
             {
-              en: "Teacher Josi replies within a few hours with available times",
-              pt: "A Teacher Josi responde em poucas horas com horarios disponiveis",
+              en: "One of our teachers replies within a few hours with available times",
+              pt: "Um dos nossos professores responde em poucas horas com horarios disponiveis",
             },
             {
               en: "Pick a time that works — weekday mornings, evenings, or Saturdays",

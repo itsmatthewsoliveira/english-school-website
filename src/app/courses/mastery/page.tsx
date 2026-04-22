@@ -22,8 +22,8 @@ export default function MasteryPage() {
       heroImage={{
         src: "/images/hero-class.png",
         alt: {
-          en: "Teacher Josi in an advanced-level online English coaching session",
-          pt: "Teacher Josi em uma sessao avancada de coaching de ingles online",
+          en: "An advanced-level online English coaching session at The Way",
+          pt: "Uma sessao avancada de coaching de ingles online na The Way",
         },
       }}
       intent="mastery"
@@ -95,8 +95,8 @@ export default function MasteryPage() {
           },
           bullets: [
             {
-              en: "Individually tailored — Teacher Josi builds the curriculum around your goals",
-              pt: "Personalizado individualmente — Teacher Josi monta o curriculo ao redor dos seus objetivos",
+              en: "Individually tailored — your teacher builds the curriculum around your goals",
+              pt: "Personalizado individualmente — seu professor monta o curriculo ao redor dos seus objetivos",
             },
             {
               en: "Every class includes detailed feedback on your own writing and speaking",

@@ -6,10 +6,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhatsAppFloat from "../components/WhatsAppFloat";
 import { useLang } from "../lib/LangContext";
-import { waLink } from "../lib/whatsapp";
 
 export default function AboutPage() {
-  const { t, lang } = useLang();
+  const { t } = useLang();
 
   return (
     <>
@@ -40,19 +39,14 @@ export default function AboutPage() {
               </h1>
               <p className="detail-subtitle">
                 {t(
-                  "The Way English School is a one-teacher, high-touch online school founded and run by Teacher Josi. Over 23 years, it has helped 500+ students across 10+ countries reach the fluency that textbooks and apps couldn't give them.",
-                  "A The Way English School é uma escola online artesanal, fundada e conduzida pela Teacher Josi. Em 23 anos, ajudou mais de 500 alunos em mais de 10 países a alcançarem a fluência que livros e apps não deram."
+                  "The Way English School is a high-touch online school founded by Teacher Josi in 2003, now supported by a team of experienced teachers. Over 23+ years we've helped 500+ students across 10+ countries reach the fluency that textbooks and apps couldn't give them.",
+                  "A The Way English School é uma escola online artesanal, fundada pela Teacher Josi em 2003 e hoje apoiada por uma equipe de professores experientes. Em mais de 23 anos, ajudamos mais de 500 alunos em mais de 10 países a alcançarem a fluência que livros e apps não deram."
                 )}
               </p>
               <div className="detail-cta-row">
-                <a
-                  href={waLink("trial", lang)}
-                  className="btn btn-primary btn-lg"
-                  target="_blank"
-                  rel="noopener"
-                >
+                <Link href="/book/trial" className="btn btn-primary btn-lg">
                   {t("Book a free trial", "Agendar aula gratuita")}
-                </a>
+                </Link>
                 <Link href="/quiz" className="btn btn-ghost btn-lg">
                   {t("Take the level quiz", "Fazer o teste de nível")}
                 </Link>
@@ -91,14 +85,14 @@ export default function AboutPage() {
                 </p>
                 <p style={{ lineHeight: 1.75, marginBottom: 16 }}>
                   {t(
-                    "Teacher Josi built The Way around the opposite principle: every class is live, every class is a real conversation, and every student's path is personal. No apps, no pre-recorded videos, no AI teachers. Just a room (virtual, but real) where you speak, make mistakes safely, and leave a little more confident every time.",
-                    "A Teacher Josi construiu a The Way no princípio oposto: toda aula é ao vivo, toda aula é conversa real e o caminho de cada aluno é personalizado. Sem apps, sem vídeos gravados, sem professores de IA. Só uma sala (virtual, mas real) onde você fala, erra em segurança e sai um pouco mais confiante a cada vez."
+                    "Our founder built The Way around the opposite principle: every class is live, every class is a real conversation, and every student's path is personal. No apps, no pre-recorded videos, no AI teachers. Just a room (virtual, but real) where you speak, make mistakes safely, and leave a little more confident every time.",
+                    "Nossa fundadora construiu a The Way no princípio oposto: toda aula é ao vivo, toda aula é conversa real e o caminho de cada aluno é personalizado. Sem apps, sem vídeos gravados, sem professores de IA. Só uma sala (virtual, mas real) onde você fala, erra em segurança e sai um pouco mais confiante a cada vez."
                   )}
                 </p>
                 <p style={{ lineHeight: 1.75 }}>
                   {t(
-                    "23 years later, The Way has become a quiet success story — students in Brazil, the US, the UK, Canada, Australia, Germany, Japan, Portugal, Argentina, and beyond, all taught by the same dedicated teacher who knows their name, their goals, and where they struggle.",
-                    "23 anos depois, a The Way virou uma história de sucesso silenciosa — alunos no Brasil, EUA, Reino Unido, Canadá, Austrália, Alemanha, Japão, Portugal, Argentina e outros países, todos com a mesma professora dedicada que conhece seus nomes, objetivos e dificuldades."
+                    "23+ years later, The Way has become a quiet success story — students in Brazil, the US, the UK, Canada, Australia, Germany, Japan, Portugal, Argentina, and beyond, all taught by a team of dedicated teachers who know their names, their goals, and where they struggle.",
+                    "Mais de 23 anos depois, a The Way virou uma história de sucesso silenciosa — alunos no Brasil, EUA, Reino Unido, Canadá, Austrália, Alemanha, Japão, Portugal, Argentina e outros países, todos com uma equipe de professores dedicados que conhecem seus nomes, objetivos e dificuldades."
                   )}
                 </p>
               </div>
@@ -111,18 +105,18 @@ export default function AboutPage() {
                     <span>
                       <strong>{t("Live, human, 1-on-1 or small group.", "Ao vivo, humana, individual ou em grupo pequeno.")}</strong>{" "}
                       {t(
-                        "No apps replacing the teacher. Every class is on Google Meet or Zoom with Teacher Josi.",
-                        "Nenhum app substituindo a professora. Toda aula é no Google Meet ou Zoom com a Teacher Josi."
+                        "No apps replacing the teacher. Every class is on Google Meet or Zoom with one of our teachers.",
+                        "Nenhum app substituindo o professor. Toda aula é no Google Meet ou Zoom com um dos nossos professores."
                       )}
                     </span>
                   </li>
                   <li>
                     <CheckSvg />
                     <span>
-                      <strong>{t("23+ years of experience in one teacher.", "23+ anos de experiência numa única professora.")}</strong>{" "}
+                      <strong>{t("A team you'll actually recognize.", "Uma equipe que você realmente conhece.")}</strong>{" "}
                       {t(
-                        "Not a platform with rotating contractors. The person in your first class is the same person in your 100th.",
-                        "Não é uma plataforma com professores rotativos. Quem está na sua primeira aula é a mesma pessoa da sua centésima."
+                        "Not a platform with rotating contractors. Each student is matched with a teacher who knows them — and sticks with them.",
+                        "Não é uma plataforma com professores rotativos. Cada aluno é pareado com um professor que o conhece — e fica com ele."
                       )}
                     </span>
                   </li>
@@ -131,8 +125,8 @@ export default function AboutPage() {
                     <span>
                       <strong>{t("Bilingual support when you need it.", "Suporte bilíngue quando precisa.")}</strong>{" "}
                       {t(
-                        "Stuck? Josi speaks Portuguese natively and can translate the tricky moments — until you don't need that anymore.",
-                        "Travou? A Josi fala português nativamente e traduz os momentos difíceis — até você não precisar mais disso."
+                        "Stuck? Our teachers speak Portuguese and can translate the tricky moments — until you don't need that anymore.",
+                        "Travou? Nossos professores falam português e traduzem os momentos difíceis — até você não precisar mais disso."
                       )}
                     </span>
                   </li>
@@ -160,23 +154,23 @@ export default function AboutPage() {
               </div>
 
               <div className="detail-section">
-                <h2>{t("About Teacher Josi", "Sobre a Teacher Josi")}</h2>
+                <h2>{t("About our founder", "Sobre a nossa fundadora")}</h2>
                 <p style={{ lineHeight: 1.75, marginBottom: 16 }}>
                   {t(
-                    "Josimeri Rodrigues Jacinto Gitahy — known to everyone as Teacher Josi — has been teaching English in Pocos de Caldas, Minas Gerais, Brazil since 2003. She's taught absolute beginners, corporate executives, PhD candidates, retirees preparing to move abroad, kids learning their first words, and everything in between.",
-                    "Josimeri Rodrigues Jacinto Gitahy — conhecida como Teacher Josi — ensina inglês em Poços de Caldas, Minas Gerais, Brasil desde 2003. Já ensinou iniciantes absolutos, executivos corporativos, candidatos a doutorado, aposentados indo morar fora, crianças aprendendo as primeiras palavras e tudo no meio."
+                    "Josimeri Rodrigues Jacinto Gitahy — known to everyone as Teacher Josi — founded The Way in Pocos de Caldas, Minas Gerais, Brazil in 2003. She's taught absolute beginners, corporate executives, PhD candidates, retirees preparing to move abroad, kids learning their first words, and everything in between.",
+                    "Josimeri Rodrigues Jacinto Gitahy — conhecida como Teacher Josi — fundou a The Way em Poços de Caldas, Minas Gerais, Brasil em 2003. Já ensinou iniciantes absolutos, executivos corporativos, candidatos a doutorado, aposentados indo morar fora, crianças aprendendo as primeiras palavras e tudo no meio."
                   )}
                 </p>
                 <p style={{ lineHeight: 1.75, marginBottom: 16 }}>
                   {t(
-                    "Her teaching philosophy is simple: when students enjoy the journey, they achieve extraordinary results. Classes are warm, structured, and paced to the student — never rushed, never boring. She believes the teacher's job isn't to be impressive; it's to make the student confident enough to stop needing the teacher.",
-                    "Sua filosofia é simples: quando o aluno curte a jornada, ele alcança resultados extraordinários. As aulas são acolhedoras, estruturadas e no ritmo do aluno — nunca corridas, nunca chatas. Ela acredita que o trabalho da professora não é impressionar, é deixar o aluno confiante o bastante pra não precisar mais dela."
+                    "Her teaching philosophy — now the school's — is simple: when students enjoy the journey, they achieve extraordinary results. Classes are warm, structured, and paced to the student — never rushed, never boring. We believe a teacher's job isn't to be impressive; it's to make the student confident enough to stop needing the teacher.",
+                    "A filosofia dela — hoje a da escola — é simples: quando o aluno curte a jornada, ele alcança resultados extraordinários. As aulas são acolhedoras, estruturadas e no ritmo do aluno — nunca corridas, nunca chatas. A gente acredita que o trabalho do professor não é impressionar, é deixar o aluno confiante o bastante pra não precisar mais dele."
                   )}
                 </p>
                 <p style={{ lineHeight: 1.75 }}>
                   {t(
-                    "Outside of teaching, Josi is a mom, a reader, a traveler, and an endless student herself — always learning something new, because the best teachers are the ones who haven't forgotten what it feels like to be a beginner.",
-                    "Fora da sala de aula, a Josi é mãe, leitora, viajante e aluna eterna — sempre aprendendo algo novo, porque as melhores professoras são aquelas que não esqueceram como é ser iniciante."
+                    "Today Teacher Josi leads the school alongside a team of experienced teachers — and she's still teaching students personally, too. Outside of teaching, she's a mom, a reader, a traveler, and an endless student herself.",
+                    "Hoje a Teacher Josi lidera a escola ao lado de uma equipe de professores experientes — e continua dando aulas pessoalmente também. Fora da sala de aula, ela é mãe, leitora, viajante e aluna eterna."
                   )}
                 </p>
               </div>
@@ -223,18 +217,13 @@ export default function AboutPage() {
                 <h3>{t("Ready to start?", "Pronto para começar?")}</h3>
                 <p>
                   {t(
-                    "The best way to know if The Way is right for you is to meet Teacher Josi. Free, 30 minutes, zero obligation.",
-                    "O melhor jeito de saber se a The Way é pra você é conhecer a Teacher Josi. Grátis, 30 minutos, sem compromisso."
+                    "The best way to know if The Way is right for you is to meet one of our teachers. Free, 30 minutes, zero obligation.",
+                    "O melhor jeito de saber se a The Way é pra você é conhecer um dos nossos professores. Grátis, 30 minutos, sem compromisso."
                   )}
                 </p>
-                <a
-                  href={waLink("trial", lang)}
-                  className="btn btn-primary btn-full"
-                  target="_blank"
-                  rel="noopener"
-                >
+                <Link href="/book/trial" className="btn btn-primary btn-full">
                   {t("Book free trial", "Agendar aula grátis")}
-                </a>
+                </Link>
               </div>
             </aside>
           </div>

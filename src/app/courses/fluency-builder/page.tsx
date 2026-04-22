@@ -22,8 +22,8 @@ export default function FluencyBuilderPage() {
       heroImage={{
         src: "/images/hero-class.png",
         alt: {
-          en: "Teacher Josi leading an intermediate English class on video",
-          pt: "Teacher Josi dando uma aula de ingles intermediario por video",
+          en: "An intermediate English class at The Way on video",
+          pt: "Uma aula de ingles intermediario na The Way por video",
         },
       }}
       intent="fluency-builder"
