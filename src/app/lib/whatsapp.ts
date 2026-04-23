@@ -23,19 +23,19 @@ export type WAIntent =
 const MESSAGES: Record<WAIntent, { en: string; pt: string }> = {
   general: {
     en: "Hi! I'm interested in learning English with The Way. Can we chat?",
-    pt: "Oi! Tenho interesse em aprender ingles com a The Way. Podemos conversar?",
+    pt: "Oi! Tenho interesse em aprender inglês com a The Way. Podemos conversar?",
   },
   trial: {
     en: "Hi! I'd like to book a FREE trial class (30 min) with level assessment. When is the next available time?",
-    pt: "Oi! Queria agendar uma AULA EXPERIMENTAL gratuita (30 min) com avaliacao de nivel. Qual o proximo horario disponivel?",
+    pt: "Oi! Queria agendar uma AULA EXPERIMENTAL gratuita (30 min) com avaliação de nível. Qual o próximo horário disponível?",
   },
   individual: {
     en: "Hi! I'd like to book an INDIVIDUAL 1-on-1 English class (60 min). Could you send me times and pricing?",
-    pt: "Oi! Quero agendar uma AULA INDIVIDUAL de ingles (60 min). Pode me mandar horarios e precos?",
+    pt: "Oi! Quero agendar uma AULA INDIVIDUAL de inglês (60 min). Pode me mandar horários e preços?",
   },
   group: {
     en: "Hi! I'm interested in joining a small GROUP English class (max 5 students, 60 min). What groups do you have open?",
-    pt: "Oi! Tenho interesse em entrar em uma AULA EM GRUPO (maximo 5 alunos, 60 min). Quais grupos estao abertos?",
+    pt: "Oi! Tenho interesse em entrar em uma AULA EM GRUPO (máximo 5 alunos, 60 min). Quais grupos estão abertos?",
   },
   foundation: {
     en: "Hi! I'm a beginner and want to learn about the FOUNDATION ENGLISH course. Can we chat?",
@@ -43,11 +43,11 @@ const MESSAGES: Record<WAIntent, { en: string; pt: string }> = {
   },
   "fluency-builder": {
     en: "Hi! I'm interested in the FLUENCY BUILDER (intermediate) course. How do I get started?",
-    pt: "Oi! Tenho interesse no curso CONSTRUTOR DE FLUENCIA (intermediario). Como faco para comecar?",
+    pt: "Oi! Tenho interesse no curso CONSTRUTOR DE FLUENCIA (intermediário). Como faco para começar?",
   },
   mastery: {
     en: "Hi! I'd like to learn more about the MASTERY PROGRAM (advanced English). Could you send details?",
-    pt: "Oi! Queria saber mais sobre o PROGRAMA DE DOMINIO (ingles avancado). Pode me mandar detalhes?",
+    pt: "Oi! Queria saber mais sobre o PROGRAMA DE DOMINIO (inglês avançado). Pode me mandar detalhes?",
   },
 };
 

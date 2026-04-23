@@ -84,42 +84,42 @@ export default function Page() {
       q: ["How do the online classes work?", "Como funcionam as aulas online?"],
       a: [
         "Classes are held live via video call (Google Meet or Zoom). You'll have real-time interaction with your teacher, just like being in a physical classroom - but from the comfort of your home. All you need is a computer or tablet with internet access.",
-        "As aulas sao realizadas ao vivo por videochamada (Google Meet ou Zoom). Voce tera interacao em tempo real com seu professor, como em uma sala de aula presencial - mas no conforto da sua casa. Tudo que voce precisa e um computador ou tablet com acesso a internet.",
+        "As aulas são realizadas ao vivo por videochamada (Google Meet ou Zoom). Você terá interação em tempo real com seu professor, como em uma sala de aula presencial - mas no conforto da sua casa. Tudo que você precisa e um computador ou tablet com acesso a internet.",
       ],
     },
     {
-      q: ["What is the class schedule like?", "Como e o horario das aulas?"],
+      q: ["What is the class schedule like?", "Como e o horário das aulas?"],
       a: [
         "We offer flexible scheduling to fit your lifestyle. Classes are available Monday through Saturday, with morning, afternoon, and evening time slots. We'll find the best time that works for you during your free trial.",
-        "Oferecemos horarios flexiveis para se adaptar ao seu estilo de vida. As aulas estao disponiveis de segunda a sabado, com horarios de manha, tarde e noite. Encontraremos o melhor horario para voce durante sua aula experimental.",
+        "Oferecemos horários flexíveis para se adaptar ao seu estilo de vida. As aulas estão disponíveis de segunda a sábado, com horários de manhã, tarde e noite. Encontraremos o melhor horário para você durante sua aula experimental.",
       ],
     },
     {
-      q: ["Do you offer individual or group classes?", "Voces oferecem aulas individuais ou em grupo?"],
+      q: ["Do you offer individual or group classes?", "Vocês oferecem aulas individuais ou em grupo?"],
       a: [
         "We offer both! Individual classes provide fully personalized attention, while small group classes (maximum 5 students) offer peer interaction at a more accessible price point. Both formats are 100% live and interactive.",
-        "Oferecemos ambos! Aulas individuais proporcionam atencao totalmente personalizada, enquanto aulas em grupo (maximo 5 alunos) oferecem interacao com colegas a um preco mais acessivel. Ambos os formatos sao 100% ao vivo e interativos.",
+        "Oferecemos ambos! Aulas individuais proporcionam atenção totalmente personalizada, enquanto aulas em grupo (máximo 5 alunos) oferecem interação com colegas a um preço mais acessivel. Ambos os formatos são 100% ao vivo e interativos.",
       ],
     },
     {
       q: ["I'm a complete beginner. Is that okay?", "Sou iniciante completo. Tudo bem?"],
       a: [
         "Absolutely! Many of our most successful students started with zero English knowledge. Our teachers are experienced in working with complete beginners and will guide you step by step. The free trial class includes a level assessment so we know exactly where to start.",
-        "Com certeza! Muitos dos nossos alunos mais bem-sucedidos comecaram sem nenhum conhecimento de ingles. Nossos professores tem experiencia em trabalhar com iniciantes completos e vao guia-lo passo a passo. A aula experimental gratuita inclui uma avaliacao de nivel para sabermos exatamente por onde comecar.",
+        "Com certeza! Muitos dos nossos alunos mais bem-sucedidos começaram sem nenhum conhecimento de inglês. Nossos professores têm experiência em trabalhar com iniciantes completos e vão guiá-lo passo a passo. A aula experimental gratuita inclui uma avaliação de nível para sabermos exatamente por onde começar.",
       ],
     },
     {
       q: ["How long does it take to become fluent?", "Quanto tempo leva para ficar fluente?"],
       a: [
         "Every student is different, but with consistent classes (2-3 times per week), most students see meaningful progress within 3-6 months. Complete beginners typically reach conversational fluency within 12-18 months. We'll set realistic goals together during your trial class.",
-        "Cada aluno e diferente, mas com aulas consistentes (2-3 vezes por semana), a maioria dos alunos ve progresso significativo em 3-6 meses. Iniciantes completos geralmente alcancam fluencia conversacional em 12-18 meses. Definiremos metas realistas juntos durante sua aula experimental.",
+        "Cada aluno e diferente, mas com aulas consistentes (2-3 vezes por semana), a maioria dos alunos ve progresso significativo em 3-6 meses. Iniciantes completos geralmente alcancam fluência conversacional em 12-18 meses. Definiremos metas realistas juntos durante sua aula experimental.",
       ],
     },
     {
       q: ["What materials do I need?", "Quais materiais eu preciso?"],
       a: [
         "All learning materials are provided digitally by your teacher. You just need a computer, tablet, or smartphone with a stable internet connection, a webcam, and a microphone. No expensive textbooks required!",
-        "Todos os materiais de aprendizagem sao fornecidos digitalmente pelo seu professor. Voce so precisa de um computador, tablet ou smartphone com conexao estavel a internet, webcam e microfone. Sem necessidade de livros caros!",
+        "Todos os materiais de aprendizagem são fornecidos digitalmente pelo seu professor. Você so precisa de um computador, tablet ou smartphone com conexao estável a internet, webcam e microfone. Sem necessidade de livros caros!",
       ],
     },
   ];
@@ -141,19 +141,19 @@ export default function Page() {
               <div className="hero-badge">
                 {t(
                   "Online English school with 23+ years of experience",
-                  "Escola de ingles online com mais de 23 anos de experiencia"
+                  "Escola de inglês online com mais de 23 anos de experiência"
                 )}
               </div>
               <h1>
                 {t(
                   "Learn English with live classes that actually work",
-                  "Aprenda ingles com aulas ao vivo que realmente funcionam"
+                  "Aprenda inglês com aulas ao vivo que realmente funcionam"
                 )}
               </h1>
               <p className="hero-subtitle">
                 {t(
                   "Dynamic, fun, and effective online lessons from beginner to advanced. Study from anywhere with a teacher who cares about your progress.",
-                  "Aulas online dinamicas, divertidas e eficazes, do iniciante ao avancado. Estude de qualquer lugar com uma professora que se importa com seu progresso."
+                  "Aulas online dinamicas, divertidas e eficazes, do iniciante ao avançado. Estude de qualquer lugar com uma professora que se importa com seu progresso."
                 )}
               </p>
               <div className="hero-cta">
@@ -167,7 +167,7 @@ export default function Page() {
               <div className="hero-stats">
                 <div className="stat">
                   <span className="stat-number">23+</span>
-                  <span className="stat-label">{t("Years experience", "Anos de experiencia")}</span>
+                  <span className="stat-label">{t("Years experience", "Anos de experiência")}</span>
                 </div>
                 <div className="stat-divider" />
                 <div className="stat">
@@ -193,7 +193,7 @@ export default function Page() {
                     src="/images/hero-student.png"
                     alt={t(
                       "A student learning English online with The Way, taking notes during a live class",
-                      "Uma aluna aprendendo ingles online com a The Way, fazendo anotacoes durante uma aula ao vivo"
+                      "Uma aluna aprendendo inglês online com a The Way, fazendo anotações durante uma aula ao vivo"
                     )}
                     width={1024}
                     height={1024}
@@ -228,20 +228,20 @@ export default function Page() {
         <div className="container">
           <div className="section-header">
             <p className="section-label">{t("About us", "Sobre nos")}</p>
-            <h2>{t("Your path to English fluency", "Seu caminho para a fluencia em ingles")}</h2>
+            <h2>{t("Your path to English fluency", "Seu caminho para a fluência em inglês")}</h2>
           </div>
           <div className="about-content">
             <p className="about-lead">
               {t(
                 "We are an online English school with live classes taught by a team of experienced, dedicated teachers. Founded in 2003 and still growing, we've helped hundreds of students achieve their personal and professional dreams.",
-                "Somos uma escola de ingles online com aulas ao vivo ministradas por uma equipe de professores experientes e dedicados. Fundada em 2003 e ainda crescendo, ajudamos centenas de alunos a realizarem seus sonhos pessoais e profissionais."
+                "Somos uma escola de inglês online com aulas ao vivo ministradas por uma equipe de professores experientes e dedicados. Fundada em 2003 e ainda crescendo, ajudamos centenas de alunos a realizarem seus sonhos pessoais e profissionais."
               )}
             </p>
             <p
               dangerouslySetInnerHTML={{
                 __html: t(
                   'Our approach is simple: <strong>dynamic, fun, and effective classes</strong> that make learning English an enjoyable journey, not a chore.',
-                  'Nossa abordagem e simples: <strong>aulas dinamicas, divertidas e eficazes</strong> que tornam o aprendizado de ingles uma jornada prazerosa, nao uma obrigacao.'
+                  'Nossa abordagem e simples: <strong>aulas dinamicas, divertidas e eficazes</strong> que tornam o aprendizado de inglês uma jornada prazerosa, não uma obrigacao.'
                 ),
               }}
             />
@@ -277,7 +277,7 @@ export default function Page() {
                 </svg>
               </div>
               <h3>{t("Results-focused", "Foco em resultados")}</h3>
-              <p>{t("From beginner to advanced - structured programs that deliver real fluency", "Do iniciante ao avancado - programas estruturados que entregam fluencia real")}</p>
+              <p>{t("From beginner to advanced - structured programs that deliver real fluency", "Do iniciante ao avançado - programas estruturados que entregam fluência real")}</p>
             </div>
           </div>
         </div>
@@ -293,7 +293,7 @@ export default function Page() {
                   src="/images/story-student.png"
                   alt={t(
                     "An adult student practicing English out loud during a class at The Way",
-                    "Um aluno adulto praticando ingles em voz alta durante uma aula na The Way"
+                    "Um aluno adulto praticando inglês em voz alta durante uma aula na The Way"
                   )}
                   width={1024}
                   height={1024}
@@ -344,19 +344,19 @@ export default function Page() {
             <p className="section-desc">
               {t(
                 "Whether you're starting from scratch or refining advanced skills, we have the right course for you.",
-                "Seja voce iniciante ou aperfeicoando habilidades avancadas, temos o curso certo para voce."
+                "Seja você iniciante ou aperfeicoando habilidades avançadas, temos o curso certo para você."
               )}
             </p>
           </div>
           <div className="courses-grid">
             <div className="course-card">
               <span className="course-level">{t("Beginner", "Iniciante")}</span>
-              <h3>{t("Foundation English", "Ingles Basico")}</h3>
-              <p>{t("Build essential vocabulary, grammar, and conversational skills with confidence.", "Construa vocabulario essencial, gramatica e habilidades de conversacao com confianca.")}</p>
+              <h3>{t("Foundation English", "Inglês Basico")}</h3>
+              <p>{t("Build essential vocabulary, grammar, and conversational skills with confidence.", "Construa vocabulário essencial, gramática e habilidades de conversação com confiança.")}</p>
               <ul className="course-features">
-                <li>{t("Basic grammar and vocabulary", "Gramatica e vocabulario basico")}</li>
+                <li>{t("Basic grammar and vocabulary", "Gramatica e vocabulário basico")}</li>
                 <li>{t("Everyday conversations", "Conversas do dia a dia")}</li>
-                <li>{t("Pronunciation practice", "Pratica de pronuncia")}</li>
+                <li>{t("Pronunciation practice", "Pratica de pronúncia")}</li>
                 <li>{t("Live interactive lessons", "Aulas interativas ao vivo")}</li>
               </ul>
               <Link href="/courses/foundation" className="btn btn-outline">
@@ -367,10 +367,10 @@ export default function Page() {
               <span className="course-badge">{t("Most popular", "Mais popular")}</span>
               <span className="course-level">{t("Intermediate", "Intermediario")}</span>
               <h3>{t("Fluency Builder", "Construtor de Fluencia")}</h3>
-              <p>{t("Enhance your communication and gain confidence in professional and social settings.", "Melhore sua comunicacao e ganhe confianca em ambientes profissionais e sociais.")}</p>
+              <p>{t("Enhance your communication and gain confidence in professional and social settings.", "Melhore sua comunicação e ganhe confiança em ambientes profissionais e sociais.")}</p>
               <ul className="course-features">
-                <li>{t("Advanced conversation practice", "Pratica de conversacao avancada")}</li>
-                <li>{t("Business English basics", "Ingles para negocios")}</li>
+                <li>{t("Advanced conversation practice", "Pratica de conversação avançada")}</li>
+                <li>{t("Business English basics", "Inglês para negócios")}</li>
                 <li>{t("Writing and reading skills", "Habilidades de escrita e leitura")}</li>
                 <li>{t("Cultural insights", "Conhecimentos culturais")}</li>
               </ul>
@@ -381,12 +381,12 @@ export default function Page() {
             <div className="course-card">
               <span className="course-level">{t("Advanced", "Avancado")}</span>
               <h3>{t("Mastery Program", "Programa de Dominio")}</h3>
-              <p>{t("Perfect your English for professional success with nuanced, native-level communication.", "Aperfeicoce seu ingles para o sucesso profissional com comunicacao refinada e de nivel nativo.")}</p>
+              <p>{t("Perfect your English for professional success with nuanced, native-level communication.", "Aperfeicoce seu inglês para o sucesso profissional com comunicação refinada e de nível nativo.")}</p>
               <ul className="course-features">
                 <li>{t("Professional presentations", "Apresentacoes profissionais")}</li>
-                <li>{t("Advanced business English", "Ingles comercial avancado")}</li>
-                <li>{t("Academic writing", "Escrita academica")}</li>
-                <li>{t("Native-level fluency", "Fluencia de nivel nativo")}</li>
+                <li>{t("Advanced business English", "Inglês comercial avançado")}</li>
+                <li>{t("Academic writing", "Escrita acadêmica")}</li>
+                <li>{t("Native-level fluency", "Fluencia de nível nativo")}</li>
               </ul>
               <Link href="/courses/mastery" className="btn btn-outline">
                 {t("Learn more", "Saiba mais")}
@@ -421,7 +421,7 @@ export default function Page() {
                 </svg>
               </div>
               <h3>{t("Proven results", "Resultados comprovados")}</h3>
-              <p>{t("Students consistently achieve their language goals and see real, measurable progress.", "Alunos consistentemente alcancam suas metas linguisticas e veem progresso real e mensuravel.")}</p>
+              <p>{t("Students consistently achieve their language goals and see real, measurable progress.", "Alunos consistentemente alcancam suas metas linguísticas e veem progresso real e mensuravel.")}</p>
             </div>
             <div className="why-card">
               <div className="why-icon">
@@ -432,7 +432,7 @@ export default function Page() {
                   <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
               </div>
-              <h3>{t("Personal attention", "Atencao personalizada")}</h3>
+              <h3>{t("Personal attention", "Atenção personalizada")}</h3>
               <p>{t("Live interaction and personalized feedback in every single class.", "Interacao ao vivo e feedback personalizado em cada aula.")}</p>
             </div>
             <div className="why-card">
@@ -444,7 +444,7 @@ export default function Page() {
                 </svg>
               </div>
               <h3>{t("Learn from anywhere", "Aprenda de qualquer lugar")}</h3>
-              <p>{t("Study online from anywhere in the world, at times that fit your schedule.", "Estude online de qualquer lugar do mundo, nos horarios que cabem na sua agenda.")}</p>
+              <p>{t("Study online from anywhere in the world, at times that fit your schedule.", "Estude online de qualquer lugar do mundo, nos horários que cabem na sua agenda.")}</p>
             </div>
           </div>
         </div>
@@ -455,11 +455,11 @@ export default function Page() {
         <div className="container">
           <div className="section-header">
             <p className="section-label">{t("Book a class", "Agende uma aula")}</p>
-            <h2>{t("Pick the class that fits you", "Escolha a aula ideal para voce")}</h2>
+            <h2>{t("Pick the class that fits you", "Escolha a aula ideal para você")}</h2>
             <p className="section-desc">
               {t(
                 "Pick the class type that fits you, fill a quick form, and one of our teachers will reach out with available times.",
-                "Escolha o tipo de aula que combina com voce, preencha um formulario rapido e um dos nossos professores entra em contato com os horarios disponiveis."
+                "Escolha o tipo de aula que combina com você, preencha um formulário rápido e um dos nossos professores entra em contato com os horários disponíveis."
               )}
             </p>
           </div>
@@ -476,11 +476,11 @@ export default function Page() {
               <p className="booking-desc">
                 {t(
                   "Meet your teacher, get a level assessment, and receive a custom study plan.",
-                  "Conheca seu professor, receba uma avaliacao de nivel e um plano de estudos personalizado."
+                  "Conheça seu professor, receba uma avaliação de nível e um plano de estudos personalizado."
                 )}
               </p>
               <ul className="booking-features">
-                <li>{t("Level assessment included", "Avaliacao de nivel inclusa")}</li>
+                <li>{t("Level assessment included", "Avaliacao de nível inclusa")}</li>
                 <li>{t("Personalized study plan", "Plano de estudos personalizado")}</li>
                 <li>{t("Zero obligation", "Sem compromisso")}</li>
               </ul>
@@ -501,13 +501,13 @@ export default function Page() {
               <p className="booking-desc">
                 {t(
                   "Fully personalized lessons built around your goals, level, and pace.",
-                  "Aulas totalmente personalizadas de acordo com seus objetivos, nivel e ritmo."
+                  "Aulas totalmente personalizadas de acordo com seus objetivos, nível e ritmo."
                 )}
               </p>
               <ul className="booking-features">
                 <li>{t("Custom curriculum", "Curriculo personalizado")}</li>
-                <li>{t("Flexible scheduling", "Horarios flexiveis")}</li>
-                <li>{t("Fastest progress", "Progresso mais rapido")}</li>
+                <li>{t("Flexible scheduling", "Horarios flexíveis")}</li>
+                <li>{t("Fastest progress", "Progresso mais rápido")}</li>
               </ul>
               <Link href="/book/individual" className="btn btn-primary btn-full">
                 {t("Learn more · Book", "Saiba mais · Agende")}
@@ -527,12 +527,12 @@ export default function Page() {
               <p className="booking-desc">
                 {t(
                   "Small groups of up to 5 students — peer practice and conversation at a lower price.",
-                  "Grupos pequenos de ate 5 alunos — pratica com colegas e conversacao por um preco menor."
+                  "Grupos pequenos de até 5 alunos — prática com colegas e conversação por um preço menor."
                 )}
               </p>
               <ul className="booking-features">
                 <li>{t("Max 5 students", "Maximo 5 alunos")}</li>
-                <li>{t("Conversational focus", "Foco em conversacao")}</li>
+                <li>{t("Conversational focus", "Foco em conversação")}</li>
                 <li>{t("More accessible pricing", "Preco mais acessivel")}</li>
               </ul>
               <Link href="/book/group" className="btn btn-outline-light btn-full">
@@ -549,7 +549,7 @@ export default function Page() {
             <span>
               {t(
                 "All classes are 100% online, held live via video call.",
-                "Todas as aulas sao 100% online, ao vivo por videochamada."
+                "Todas as aulas são 100% online, ao vivo por videochamada."
               )}
             </span>
           </p>
@@ -568,7 +568,7 @@ export default function Page() {
               {
                 text: [
                   '"The classes are very dynamic, fun, and effective. I\'ve seen incredible progress in just a few months!"',
-                  '"As aulas sao muito dinamicas, divertidas e eficazes. Vi um progresso incrivel em apenas alguns meses!"',
+                  '"As aulas são muito dinamicas, divertidas e eficazes. Vi um progresso incrivel em apenas alguns meses!"',
                 ],
                 name: "Maria S.",
                 role: ["Business Professional", "Profissional de Negocios"],
@@ -577,7 +577,7 @@ export default function Page() {
               {
                 text: [
                   '"The teachers at The Way make learning English enjoyable and accessible. The live classes are engaging and I always look forward to them."',
-                  '"Os professores da The Way tornam o aprendizado de ingles agradavel e acessivel. As aulas ao vivo sao envolventes e eu sempre espero ansiosamente por elas."',
+                  '"Os professores da The Way tornam o aprendizado de inglês agradavel e acessivel. As aulas ao vivo são envolventes e eu sempre espero ansiosamente por elas."',
                 ],
                 name: "Carlos R.",
                 role: ["University Student", "Estudante Universitario"],
@@ -586,7 +586,7 @@ export default function Page() {
               {
                 text: [
                   '"I started as a complete beginner and now I can confidently communicate in English. The Way changed my career prospects!"',
-                  '"Comecei como iniciante completo e agora consigo me comunicar em ingles com confianca. The Way mudou minhas perspectivas de carreira!"',
+                  '"Comecei como iniciante completo e agora consigo me comunicar em inglês com confiança. The Way mudou minhas perspectivas de carreira!"',
                 ],
                 name: "Ana P.",
                 role: ["Healthcare Worker", "Profissional de Saude"],
@@ -640,7 +640,7 @@ export default function Page() {
       <section id="contact" className="cta-section">
         <div className="container">
           <div className="cta-content">
-            <h2>{t("Ready to start learning?", "Pronto para comecar a aprender?")}</h2>
+            <h2>{t("Ready to start learning?", "Pronto para começar a aprender?")}</h2>
             <p>
               {t(
                 "Take the first step toward achieving your personal and professional dreams.",
@@ -687,8 +687,8 @@ export default function Page() {
                 </svg>
                 <span>
                   {t(
-                    "Pocos de Caldas, Brazil (Online Worldwide)",
-                    "Pocos de Caldas, Brasil (Online para o Mundo Todo)"
+                    "Poços de Caldas, Brazil (Online Worldwide)",
+                    "Poços de Caldas, Brasil (Online para o Mundo Todo)"
                   )}
                 </span>
               </span>

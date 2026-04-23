@@ -9,21 +9,21 @@ export default function MasteryPage() {
       tag={{ en: "Advanced", pt: "Avancado" }}
       title={{
         en: "Mastery Program — polish your English to native-level",
-        pt: "Programa de Dominio — refine seu ingles ao nivel nativo",
+        pt: "Programa de Dominio — refine seu inglês ao nível nativo",
       }}
       subtitle={{
         en: "For advanced students who want native-level nuance: precise vocabulary, sophisticated grammar, professional writing, and the subtle cultural fluency that sets you apart.",
-        pt: "Para alunos avancados que buscam nuance de nivel nativo: vocabulario preciso, gramatica sofisticada, escrita profissional e a fluencia cultural sutil que te diferencia.",
+        pt: "Para alunos avançados que buscam nuance de nível nativo: vocabulário preciso, gramática sofisticada, escrita profissional e a fluência cultural sutil que te diferencia.",
       }}
       priceNote={{
         en: "Live classes · 60 min · 1-on-1 recommended for this level",
-        pt: "Aulas ao vivo · 60 min · Individual recomendado neste nivel",
+        pt: "Aulas ao vivo · 60 min · Individual recomendado neste nível",
       }}
       heroImage={{
         src: "/images/hero-class.png",
         alt: {
           en: "An advanced-level online English coaching session at The Way",
-          pt: "Uma sessao avancada de coaching de ingles online na The Way",
+          pt: "Uma sessão avançada de coaching de inglês online na The Way",
         },
       }}
       intent="mastery"
@@ -35,7 +35,7 @@ export default function MasteryPage() {
         {
           heading: {
             en: "What you'll refine",
-            pt: "O que voce vai refinar",
+            pt: "O que você vai refinar",
           },
           bullets: [
             {
@@ -44,19 +44,19 @@ export default function MasteryPage() {
             },
             {
               en: "Advanced business English — negotiation, leadership communication, pitching",
-              pt: "Ingles empresarial avancado — negociacao, comunicacao de lideranca, pitching",
+              pt: "Inglês empresarial avançado — negociação, comunicação de liderança, pitching",
             },
             {
               en: "Academic writing — essays, research papers, applications, cover letters",
-              pt: "Escrita academica — redacoes, papers, candidaturas, cartas de apresentacao",
+              pt: "Escrita acadêmica — redacoes, papers, candidaturas, cartas de apresentacao",
             },
             {
               en: "Native-level fluency — idioms, register, humor, cultural references",
-              pt: "Fluencia de nivel nativo — expressoes, registro, humor, referencias culturais",
+              pt: "Fluencia de nível nativo — expressõés, registro, humor, referencias culturais",
             },
             {
               en: "Advanced pronunciation and accent reduction",
-              pt: "Pronuncia avancada e reducao de sotaque",
+              pt: "Pronuncia avançada e reducao de sotaque",
             },
           ],
         },
@@ -72,7 +72,7 @@ export default function MasteryPage() {
             },
             {
               en: "Present in English to global audiences with confidence",
-              pt: "Apresentar em ingles para audiencias globais com confianca",
+              pt: "Apresentar em inglês para audiências globais com confiança",
             },
             {
               en: "Write professional content — articles, whitepapers, executive emails",
@@ -91,7 +91,7 @@ export default function MasteryPage() {
         {
           heading: {
             en: "Approach for this level",
-            pt: "Abordagem deste nivel",
+            pt: "Abordagem deste nível",
           },
           bullets: [
             {
@@ -100,7 +100,7 @@ export default function MasteryPage() {
             },
             {
               en: "Every class includes detailed feedback on your own writing and speaking",
-              pt: "Cada aula inclui feedback detalhado sobre sua propria escrita e fala",
+              pt: "Cada aula inclui feedback detalhado sobre sua própria escrita e fala",
             },
             {
               en: "Real projects from your life — your work, your applications, your goals",
@@ -112,7 +112,7 @@ export default function MasteryPage() {
       whoItsFor={[
         {
           en: "Upper-intermediate to advanced students (B2–C1)",
-          pt: "Alunos intermediarios-avancados (B2–C1)",
+          pt: "Alunos intermediários-avançados (B2–C1)",
         },
         {
           en: "Professionals in senior or international roles",
@@ -120,7 +120,7 @@ export default function MasteryPage() {
         },
         {
           en: "Candidates preparing for Cambridge, IELTS, TOEFL, or grad school applications",
-          pt: "Candidatos se preparando para Cambridge, IELTS, TOEFL ou pos-graduacao",
+          pt: "Candidatos se preparando para Cambridge, IELTS, TOEFL ou pos-graduação",
         },
         {
           en: "Fluent speakers who want to sound truly native",

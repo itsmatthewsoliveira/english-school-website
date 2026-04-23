@@ -32,7 +32,7 @@ export default function Footer() {
             <p className="footer-desc">
               {t(
                 "Empowering students to achieve their dreams through effective English education since 2003.",
-                "Capacitando alunos a realizarem seus sonhos atraves de uma educacao eficaz em ingles desde 2003."
+                "Capacitando alunos a realizarem seus sonhos atraves de uma educacao eficaz em inglês desde 2003."
               )}
             </p>
           </div>
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
           <div className="footer-links-group">
             <p className="footer-heading">{t("Courses", "Cursos")}</p>
-            <Link href="/courses/foundation">{t("Foundation English", "Ingles Basico")}</Link>
+            <Link href="/courses/foundation">{t("Foundation English", "Inglês Basico")}</Link>
             <Link href="/courses/fluency-builder">{t("Fluency Builder", "Construtor de Fluencia")}</Link>
             <Link href="/courses/mastery">{t("Mastery Program", "Programa de Dominio")}</Link>
             <Link href="/book/trial">{t("Free trial", "Aula experimental")}</Link>

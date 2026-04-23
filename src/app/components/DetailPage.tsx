@@ -181,11 +181,11 @@ export default function DetailPage(props: DetailPageProps) {
               </div>
 
               <div className="detail-sidebar-card detail-sidebar-cta">
-                <h3>{t("Ready to start?", "Pronto para comecar?")}</h3>
+                <h3>{t("Ready to start?", "Pronto para começar?")}</h3>
                 <p>
                   {t(
                     "Fill out the booking form on this page. One of our teachers will reach out with available times and answer your questions.",
-                    "Preencha o formulario de reserva nesta pagina. Um dos nossos professores entra em contato com os horarios e tira suas duvidas."
+                    "Preencha o formulário de reserva nesta pagina. Um dos nossos professores entra em contato com os horários e tira suas dúvidas."
                   )}
                 </p>
                 {bookingFormClass ? (
@@ -229,7 +229,7 @@ export default function DetailPage(props: DetailPageProps) {
                 src="/images/story-student.png"
                 alt={t(
                   "A student practicing English during a class at The Way",
-                  "Um aluno praticando ingles durante uma aula na The Way"
+                  "Um aluno praticando inglês durante uma aula na The Way"
                 )}
                 width={1024}
                 height={1024}
@@ -248,14 +248,14 @@ export default function DetailPage(props: DetailPageProps) {
               </h2>
               <p>
                 {t(
-                  "The Way is an online English school founded by Teacher Josi in Pocos de Caldas, Brazil. Today a team of experienced teachers works alongside her, and together they've helped 500+ students across 10+ countries reach their personal and professional goals through English.",
-                  "A The Way e uma escola de ingles online fundada pela Teacher Josi em Pocos de Caldas, Brasil. Hoje uma equipe de professores experientes trabalha junto com ela, e juntos ajudaram mais de 500 alunos em mais de 10 paises a conquistarem seus objetivos pessoais e profissionais atraves do ingles."
+                  "The Way is an online English school founded by Teacher Josi in Poços de Caldas, Brazil. Today a team of experienced teachers works alongside her, and together they've helped 500+ students across 10+ countries reach their personal and professional goals through English.",
+                  "A The Way e uma escola de inglês online fundada pela Teacher Josi em Poços de Caldas, Brasil. Hoje uma equipe de professores experientes trabalha junto com ela, e juntos ajudaram mais de 500 alunos em mais de 10 países a conquistarem seus objetivos pessoais e profissionais atraves do inglês."
                 )}
               </p>
               <p>
                 {t(
                   "Every class is 100% live — no apps, no pre-recorded videos, no AI replacements. Just real conversation with a teacher who cares about your progress.",
-                  "Cada aula e 100% ao vivo — sem apps, sem videos gravados, sem substitutos de IA. E conversa real com um professor que se importa com seu progresso."
+                  "Cada aula e 100% ao vivo — sem apps, sem vídeos gravados, sem substitutos de IA. E conversa real com um professor que se importa com seu progresso."
                 )}
               </p>
               <div className="detail-about-stats">

@@ -219,7 +219,7 @@ function recommendation(level: Level): {
       whyEn:
         "You've got the basics. Fluency Builder is designed exactly for this moment — to turn textbook English into real, confident conversation.",
       whyPt:
-        "Você já tem a base. O Fluency Builder foi feito pra esse momento — transformar o inglês de livro em conversa real e confiante.",
+        "Você já têm a base. O Fluency Builder foi feito pra esse momento — transformar o inglês de livro em conversa real e confiante.",
       next: {
         en: "Book a free trial to start building real fluency.",
         pt: "Agende uma aula gratuita para começar a construir fluência de verdade.",

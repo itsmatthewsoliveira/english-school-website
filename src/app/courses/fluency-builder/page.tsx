@@ -9,11 +9,11 @@ export default function FluencyBuilderPage() {
       tag={{ en: "Intermediate · Most popular", pt: "Intermediario · Mais popular" }}
       title={{
         en: "Fluency Builder — go from 'okay at English' to genuinely fluent",
-        pt: "Construtor de Fluencia — saia do 'razoavel' e chegue a fluencia de verdade",
+        pt: "Construtor de Fluencia — saia do 'razoavel' e chegue a fluência de verdade",
       }}
       subtitle={{
         en: "The course that gets you speaking confidently in professional and social situations. Real conversations, useful business English, and the cultural nuance textbooks miss.",
-        pt: "O curso que te faz falar com confianca em situacoes profissionais e sociais. Conversas reais, ingles de negocios util e a nuance cultural que os livros deixam de lado.",
+        pt: "O curso que te faz falar com confiança em situacoes profissionais e sociais. Conversas reais, inglês de negócios util e a nuance cultural que os livros deixam de lado.",
       }}
       priceNote={{
         en: "Live classes · 60 min · Most students do 2x per week",
@@ -23,7 +23,7 @@ export default function FluencyBuilderPage() {
         src: "/images/hero-class.png",
         alt: {
           en: "An intermediate English class at The Way on video",
-          pt: "Uma aula de ingles intermediario na The Way por video",
+          pt: "Uma aula de inglês intermediário na The Way por vídeo",
         },
       }}
       intent="fluency-builder"
@@ -35,16 +35,16 @@ export default function FluencyBuilderPage() {
         {
           heading: {
             en: "What you'll master",
-            pt: "O que voce vai dominar",
+            pt: "O que você vai dominar",
           },
           bullets: [
             {
               en: "Advanced conversation — debating, storytelling, disagreeing politely",
-              pt: "Conversa avancada — debate, storytelling, discordar com educacao",
+              pt: "Conversa avançada — debate, storytelling, discordar com educacao",
             },
             {
               en: "Business English basics — meetings, emails, presentations, LinkedIn",
-              pt: "Ingles de negocios — reunioes, e-mails, apresentacoes, LinkedIn",
+              pt: "Inglês de negócios — reunioes, e-mails, apresentacoes, LinkedIn",
             },
             {
               en: "Reading and writing — articles, reports, structured responses",
@@ -56,7 +56,7 @@ export default function FluencyBuilderPage() {
             },
             {
               en: "Advanced grammar — conditionals, reported speech, phrasal verbs",
-              pt: "Gramatica avancada — condicionais, discurso indireto, phrasal verbs",
+              pt: "Gramatica avançada — condicionais, discurso indireto, phrasal verbs",
             },
           ],
         },
@@ -68,7 +68,7 @@ export default function FluencyBuilderPage() {
           bullets: [
             {
               en: "Every class mixes conversation (40%), focused grammar/vocab (30%), and real-world practice (30%)",
-              pt: "Cada aula mistura conversa (40%), gramatica/vocabulario focado (30%) e pratica real (30%)",
+              pt: "Cada aula mistura conversa (40%), gramática/vocabulário focado (30%) e prática real (30%)",
             },
             {
               en: "Real materials — TED talks, news articles, business emails, podcasts",
@@ -76,7 +76,7 @@ export default function FluencyBuilderPage() {
             },
             {
               en: "Role-play exercises — job interviews, negotiations, client calls",
-              pt: "Exercicios de role-play — entrevistas, negociacoes, chamadas com clientes",
+              pt: "Exercicios de role-play — entrevistas, negociações, chamadas com clientes",
             },
             {
               en: "Monthly progress check with clear milestones",
@@ -92,11 +92,11 @@ export default function FluencyBuilderPage() {
           bullets: [
             {
               en: "You stop translating in your head and start thinking in English",
-              pt: "Voce para de traduzir na cabeca e comeca a pensar em ingles",
+              pt: "Você para de traduzir na cabeca e começa a pensar em inglês",
             },
             {
               en: "You go from 'I understand but can't respond' to natural back-and-forth",
-              pt: "Voce sai do 'entendo mas nao respondo' para um dialogo natural",
+              pt: "Você sai do 'entendo mas não respondo' para um dialogo natural",
             },
             {
               en: "Job interviews, work meetings, and travel stop feeling scary",
@@ -108,11 +108,11 @@ export default function FluencyBuilderPage() {
       whoItsFor={[
         {
           en: "Students who already have basic grammar and vocabulary (A2–B1)",
-          pt: "Alunos que ja tem gramatica e vocabulario basico (A2–B1)",
+          pt: "Alunos que já têm gramática e vocabulário basico (A2–B1)",
         },
         {
           en: "Professionals who need English for work — meetings, emails, interviews",
-          pt: "Profissionais que precisam de ingles no trabalho — reunioes, e-mails, entrevistas",
+          pt: "Profissionais que precisam de inglês no trabalho — reunioes, e-mails, entrevistas",
         },
         {
           en: "Students who've plateaued with apps and want real progress",
@@ -120,7 +120,7 @@ export default function FluencyBuilderPage() {
         },
         {
           en: "People planning to travel, study, or work abroad in the next 6–12 months",
-          pt: "Pessoas planejando viajar, estudar ou trabalhar fora nos proximos 6–12 meses",
+          pt: "Pessoas planejando viajar, estudar ou trabalhar fora nos próximos 6–12 meses",
         },
       ]}
     />

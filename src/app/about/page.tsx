@@ -55,10 +55,10 @@ export default function AboutPage() {
             <div className="detail-hero-visual">
               <div className="detail-hero-image">
                 <Image
-                  src="/images/hero-class.png"
+                  src="/images/about-student.png"
                   alt={t(
-                    "A live online English class at The Way",
-                    "Uma aula ao vivo de inglês online na The Way"
+                    "A student at The Way taking notes during a live English vocabulary lesson",
+                    "Uma aluna da The Way fazendo anotações durante uma aula de vocabulário ao vivo"
                   )}
                   width={1024}
                   height={1024}
@@ -199,14 +199,14 @@ export default function AboutPage() {
                 <h2>{t("The team", "A equipe")}</h2>
                 <p style={{ lineHeight: 1.75, marginBottom: 16 }}>
                   {t(
-                    "The Way was founded and is still led by Teacher Josi, based in Pocos de Caldas, Minas Gerais. Over the years she's grown the school into a small team of experienced teachers who share the same philosophy and the same warmth in the classroom.",
+                    "The Way was founded and is still led by Teacher Josi, based in Poços de Caldas, Minas Gerais. Over the years she's grown the school into a small team of experienced teachers who share the same philosophy and the same warmth in the classroom.",
                     "A The Way foi fundada e ainda é liderada pela Teacher Josi, em Poços de Caldas, Minas Gerais. Ao longo dos anos ela expandiu a escola para uma equipe pequena de professores experientes que compartilham a mesma filosofia e o mesmo acolhimento em sala de aula."
                   )}
                 </p>
                 <p style={{ lineHeight: 1.75 }}>
                   {t(
                     "When you book a free trial, you'll be matched with the teacher who best fits your level, goals, and schedule. Sometimes that's the founder; often it's one of our other teachers. Either way, you get someone who knows your name and remembers where you left off.",
-                    "Quando você agenda uma aula experimental, é pareado com o professor que melhor encaixa no seu nível, objetivos e horário. Às vezes é a fundadora; frequentemente é um dos nossos outros professores. De qualquer jeito, você tem alguém que sabe seu nome e lembra onde você parou."
+                    "Quando você agenda uma aula experimental, é pareado com o professor que melhor encaixa no seu nível, objetivos e horário. Às vezes é a fundadora; frequentemente é um dos nossos outros professores. De qualquer jeito, você têm alguém que sabe seu nome e lembra onde você parou."
                   )}
                 </p>
               </div>
